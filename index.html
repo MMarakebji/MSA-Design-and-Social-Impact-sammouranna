@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #032e8a">
+    <!-- NAVBAR -->
+    <header class="top-nav">
+        <div class="logo">
+            <img src="images/MSA logo.png" alt="MSA Logo">
+        </div>
+
+        <nav class="desktop-nav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Community</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="btn-outline">Sign Up</button>
+            <button class="btn-yellow">Registration</button>
+        </div>
+
+        <!-- BURGER BUTTON -->
+        <button class="burger" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Community</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SLIDER -->
+    <section class="hero-slider">
+        <!-- slide 1 -->
+        <div class="slide active" style="--bg:url('images/slider1.jpg')">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">BECOME</p>
+                    <h1>THE SHARK</h1>
+                    <p class="subtitle">
+                        Embracing the “Mako Shark way,” where drive & ambition fuel success.
+                        <br>Forge the mentality.
+                        <br>Fuel your hunger for success.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-white">Schedules</button>
+                        <button class="btn-outline">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Right side registration steps -->
+                <div class="hero-steps">
+                    <div class="steps-list">
+                        <button class="step active" data-slide="0">
+                            <span class="step-label">Registration</span>
+                            <span class="step-number">01</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="1">
+                            <span class="step-label">Shop</span>
+                            <span class="step-number">02</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="2">
+                            <span class="step-label">Community</span>
+                            <span class="step-number">03</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="3">
+                            <span class="step-label">About Us</span>
+                            <span class="step-number">04</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="4">
+                            <span class="step-label">Shark Profile</span>
+                            <span class="step-number">05</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="scroll-text">Start Your Journey ↓</p>
+        </div>
+
+        <!-- slide 2 -->
+        <div class="slide" style="--bg:url('images/slider2.jpg')">
+            <div class="overlay">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="eyebrow">CHOOSE</p>
+                        <h1>YOUR GEAR</h1>
+                        <p class="subtitle">
+                            Embracing the “Mako Shark way,” where drive & ambition fuel success.
+                            <br>Forge the mentality.
+                            <br>Fuel your hunger for success.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-white">Schedules</button>
+                            <button class="btn-outline">Join Now</button>
+                        </div>
+                    </div>
+                    <!-- Right side registration steps -->
+                    <div class="hero-steps">
+                        <div class="steps-list">
+                            <button class="step active" data-slide="0">
+                                <span class="step-label">Registration</span>
+                                <span class="step-number">01</span>
+                                <img src="images/shark-icon.png" class="steps-icon" alt="">
+                            </button>
+
+                            <button class="step" data-slide="1">
+                                <span class="step-label">Shop</span>
+                                <span class="step-number">02</span>
+                                <img src="images/shark-icon.png" class="steps-icon" alt="">
+                            </button>
+
+                            <button class="step" data-slide="2">
+                                <span class="step-label">Community</span>
+                                <span class="step-number">03</span>
+                                <img src="images/shark-icon.png" class="steps-icon" alt="">
+                            </button>
+
+                            <button class="step" data-slide="3">
+                                <span class="step-label">About Us</span>
+                                <span class="step-number">04</span>
+                                <img src="images/shark-icon.png" class="steps-icon" alt="">
+                            </button>
+
+                            <button class="step" data-slide="4">
+                                <span class="step-label">Shark Profile</span>
+                                <span class="step-number">05</span>
+                                <img src="images/shark-icon.png" class="steps-icon" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="scroll-text">Start Your Journey ↓</p>
+        </div>
+
+        <!-- slide 3 -->
+        <div class="slide active" style="--bg:url('images/slider3.jpg')">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">JOIN</p>
+                    <h1>OUR FAMILY</h1>
+                    <p class="subtitle">
+                        Embracing the “Mako Shark way,” where drive & ambition fuel success.
+                        <br>Forge the mentality.
+                        <br>Fuel your hunger for success.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-white">Schedules</button>
+                        <button class="btn-outline">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Right side registration steps -->
+                <div class="hero-steps">
+                    <div class="steps-list">
+                        <button class="step active" data-slide="0">
+                            <span class="step-label">Registration</span>
+                            <span class="step-number">01</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="1">
+                            <span class="step-label">Shop</span>
+                            <span class="step-number">02</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="2">
+                            <span class="step-label">Community</span>
+                            <span class="step-number">03</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="3">
+                            <span class="step-label">About Us</span>
+                            <span class="step-number">04</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="4">
+                            <span class="step-label">Shark Profile</span>
+                            <span class="step-number">05</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="scroll-text">Start Your Journey ↓</p>
+        </div>
+
+
+        <!-- slide 4 -->
+        <div class="slide active" style="--bg:url('images/slider4.jpg')">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">MEET</p>
+                    <h1>THE TEAM</h1>
+                    <p class="subtitle">
+                        Embracing the “Mako Shark way,” where drive & ambition fuel success.
+                        <br>Forge the mentality.
+                        <br>Fuel your hunger for success.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-white">Schedules</button>
+                        <button class="btn-outline">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Right side registration steps -->
+                <div class="hero-steps">
+                    <div class="steps-list">
+                        <button class="step active" data-slide="0">
+                            <span class="step-label">Registration</span>
+                            <span class="step-number">01</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="1">
+                            <span class="step-label">Shop</span>
+                            <span class="step-number">02</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="2">
+                            <span class="step-label">Community</span>
+                            <span class="step-number">03</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="3">
+                            <span class="step-label">About Us</span>
+                            <span class="step-number">04</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="4">
+                            <span class="step-label">Shark Profile</span>
+                            <span class="step-number">05</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="scroll-text">Start Your Journey ↓</p>
+        </div>
+
+        <!-- slide 5 -->
+        <div class="slide active" style="--bg:url('images/slider5.jpg')">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">PAVE</p>
+                    <h1>YOUR PATH</h1>
+                    <p class="subtitle">
+                        Embracing the “Mako Shark way,” where drive & ambition fuel success.
+                        <br>Forge the mentality.
+                        <br>Fuel your hunger for success.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-white">Schedules</button>
+                        <button class="btn-outline">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Right side registration steps -->
+                <div class="hero-steps">
+                    <div class="steps-list">
+                        <button class="step active" data-slide="0">
+                            <span class="step-label">Registration</span>
+                            <span class="step-number">01</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="1">
+                            <span class="step-label">Shop</span>
+                            <span class="step-number">02</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="2">
+                            <span class="step-label">Community</span>
+                            <span class="step-number">03</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="3">
+                            <span class="step-label">About Us</span>
+                            <span class="step-number">04</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+
+                        <button class="step" data-slide="4">
+                            <span class="step-label">Shark Profile</span>
+                            <span class="step-number">05</span>
+                            <img src="images/shark-icon.png" class="steps-icon" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="scroll-text">Start Your Journey ↓</p>
+        </div>
+
+
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <h2 class="about-heading">
+                ABOUT <span>US</span>
+            </h2>
+
+            <p class="about-text">
+                At Mako Shark Academy, we believe that swimming is more than just a sport,
+                it's a life skill, a passion, and a journey towards excellence. Our mission
+                is to provide world-class swimming instruction in a safe, supportive, and
+                inspiring environment.
+            </p>
+        </div>
+
+        <!-- yellow lines + moving words -->
+        <div class="keyword-strip-wrapper">
+            <div class="keyword-strip">
+                <span>LEARN</span>
+                <span>GROW</span>
+                <span>TRAIN</span>
+                <span>INSPIRE</span>
+                <span>LEAD</span>
+                <span>LEARN</span>
+                <span>GROW</span>
+                <span>TRAIN</span>
+                <span>INSPIRE</span>
+                <span>LEAD</span>
+                <span>LEARN</span>
+                <span>GROW</span>
+                <span>TRAIN</span>
+                <span>INSPIRE</span>
+            </div>
+        </div>
+    </section>
+    <!-- RESULTS SECTION -->
+    <section class="results-section" >
+        <div class="results-container">
+
+            <!-- LEFT SIDE TEXT -->
+            <div class="results-left">
+                <h2 class="results-title">
+                    A JOURNEY THAT DELIVERS <span>REAL RESULTS</span>
+                </h2>
+                <p class="results-description">
+                    Your path to becoming the greatest swimmer you can be should be guided by
+                    individuals who shape your vision, mindset, and skills helping you unlock
+                    your full potential in and out of the water.
+                </p>
+            </div>
+
+            <!-- RIGHT SIDE DETAILS -->
+            <div class="results-right">
+
+                <div class="result-item">
+                    <img src="icons/global.png" alt="" class="result-icon">
+                    <div>
+                        <p class="result-text">Trained by international certified coaches</p>
+                        <a href="#" class="result-link">
+                            <span class="text">More Details</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <img src="icons/user.png" alt="" class="result-icon">
+                    <div>
+                        <p class="result-text">Trusted by 100+ parents & Athletes</p>
+                        <a href="#" class="result-link">
+                            <span class="text">More Details</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <img src="icons/medal.png" alt="" class="result-icon">
+                    <div>
+                        <p class="result-text">Designed to challenge, inspire and achieve results</p>
+                        <a href="#" class="result-link">
+                            <span class="text">More Details</span>
+                            <span class="arrow">→</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- FUN SECTION -->
+    <section class="fun-section">
+        <div class="fun-images">
+            <!-- left group -->
+            <img src="images/card1.jpg" alt="" class="fun-img fun-img-1">
+            <img src="images/card2.jpg" alt="" class="fun-img fun-img-2">
+            <img src="images/card3.jpg" alt="" class="fun-img fun-img-3">
+
+            <!-- right group -->
+            <img src="images/card4.jpg" alt="" class="fun-img fun-img-4">
+            <img src="images/card5.jpg" alt="" class="fun-img fun-img-5">
+            <img src="images/card6.jpg" alt="" class="fun-img fun-img-6">
+        </div>
+
+        <div class="fun-content">
+            <h2 class="fun-title">
+                SWIMMING HAS NEVER<br>
+                BEEN <span>MORE FUN !!</span>
+            </h2>
+            <p class="fun-subtitle">
+                Register your child in a group of up to 4 sharks only
+            </p>
+            <button class="fun-btn">Register Now</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
