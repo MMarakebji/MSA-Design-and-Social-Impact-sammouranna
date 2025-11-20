@@ -65,3 +65,40 @@ if (resultsSection) {
 
   observer.observe(resultsSection);
 }
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".cards-container .card");
+    const mainCard = document.querySelector(".main-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            if (card.classList.contains("main-card")) return;
+            const tempContent = mainCard.innerHTML;
+            mainCard.innerHTML = card.innerHTML;
+            card.innerHTML = tempContent;
+        });
+    });
+});
+
+const shopImages = [
+        "images/Screenshot2024-11-19155558 1.png",
+        "images/hat.png",
+        "images/Property 1=Variant3.png",
+        "images/Property 1=Variant4.png",
+        "images/Property 1=Variant5.png"
+    ];
+
+    let index = 0;
+    const shopImg = document.getElementById("shop-rotator");
+
+    setInterval(() => {
+        shopImg.style.opacity = 0;
+
+        setTimeout(() => {
+            index = (index + 1) % shopImages.length;
+            shopImg.src = shopImages[index];
+            shopImg.style.opacity = 1;
+        }, 500);
+    }, 5000);
