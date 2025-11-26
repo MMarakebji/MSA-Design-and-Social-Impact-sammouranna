@@ -356,15 +356,15 @@ body {
   padding-left: 5px;
 }
 
-/* shark icon */
+/* shark icon base (hidden, slightly lower) */
 .steps-icon {
   width: 22px;
   height: 22px;
   object-fit: contain;
 
   opacity: 0;
-  transform: translateX(-8px);
-  transition: all 0.25s ease;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease;
 }
 
 /* yellow line on the left of the number (optional – keep if you like it) */
@@ -409,6 +409,26 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* Shark floating up animation */
+@keyframes sharkFloatUp {
+  0% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* When the slide + step are active → make that shark float up */
+.hero-slider .slide.active .step.active .steps-icon {
+  animation: sharkFloatUp 0.6s ease-out;
+}
+
 
 /* ABOUT SECTION */
 .about-section {

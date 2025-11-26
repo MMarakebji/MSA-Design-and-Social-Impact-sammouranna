@@ -2,6 +2,7 @@ const slides = document.querySelectorAll('.slide');
 const allStepButtons = document.querySelectorAll('.step');
 
 let current = 0;
+showSlide(current);
 
 function showSlide(index) {
   // keep index in range
