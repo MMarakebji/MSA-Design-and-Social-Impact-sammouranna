@@ -826,3 +826,449 @@ body {
   background: #1f4ecb;
   color: #ffffff;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+   background: linear-gradient(#001d5a, #003087);
+}
+
+.back {
+    position: absolute;
+    transform: translateX(160%);
+    opacity: 1;
+    z-index: 0;
+    padding-top: 50px;
+}
+
+.back img {
+    width: 650px;
+    max-width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    padding: 40px 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.left-side {
+    width: 55%;
+    z-index: 2;
+}
+
+.main-title {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: translateX(50%);
+}
+
+.main-title span {
+    color: #f4e80a;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 6px;
+    opacity: 0.8;
+    font-size: 15px;
+    transform: translateX(85%);
+}
+
+.product-title {
+    margin-top: 40px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.product-subtitle {
+    color: #cbdaf7;
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.description {
+    margin-top: 18px;
+    line-height: 1.6;
+    width: 85%;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F4E80A;
+}
+
+.price span {
+    font-size: 14px;
+    opacity: 0.7;
+    color: #F4E80A;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gear-btn {
+    background: #ffffff;
+    color: #1758C3;
+}
+
+.mc-btn {
+    background: #ffffff;
+    color: #1758C3;
+}
+
+.mc-btn:hover{
+    color: #F4E80A;
+    transition: color 0.3s ease;
+}
+
+.mc-btn img {
+    width: 25px;
+}
+
+.suggested-heading {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F4E80A;
+}
+
+.suggested-container {
+    display: flex;
+    gap: 22px;
+}
+
+.suggest-card {
+    background: #266DE1;
+    padding: 18px;
+    width: 600px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.suggest-card img {
+    width: 170px;              /* base size */
+    height: auto;
+    object-fit: contain;
+    transform: scale(1.45);    /* makes image bigger */
+    transform-origin: center;  /* grows inside the box */
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.item-name {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+.right-side {
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.goggles {
+    position: relative;
+    width: 480px;
+    transform: rotate(-2deg);
+    z-index: 30;
+    transform: translateY(100px);
+}
+
+#main-img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.suggest-card img {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.suggest-card:hover img {
+    transform: scale(1.05);
+}
+
+.vertical-text {
+    position: absolute;
+    right: -60px;
+    top: 200px;
+    font-size: 60px;
+    color: #f4e80a;
+    writing-mode: vertical-rl;
+    font-weight: 800;
+    letter-spacing: 2px;
+    right: 100px;
+    z-index: 3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(
+    180deg,
+    #00225c 0%,     /* dark top */
+    #1B5BC4 45%,    /* bright middle (your color) */
+    #00225c 100%    /* dark bottom */
+);
+}
+
+
+.msa-shop-swimcaps {
+    padding: 60px 0;
+}
+
+.msa-shop-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.msa-shop-header {
+    text-align: center;
+}
+
+.msa-shop-header h2 {
+    font-size: 34px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.msa-shop-header h2 span {
+    color: #ffe600;
+}
+
+.msa-shop-header p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+}
+
+.msa-shop-cards {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.flip-card {
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform .6s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+}
+
+.flip-card-front {
+    background: #2159ea;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.flip-card-back {
+    background: rgba(0, 32, 110, 0.75);
+    backdrop-filter: blur(6px);
+    transform: rotateY(180deg);
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.flip-card-back h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.flip-card-back p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.close-flip {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ffe600;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.msa-shop-card-image {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msa-shop-card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-top: 35px;
+}
+
+.msa-shop-card-info {
+    margin-top: auto;
+}
+
+.msa-shop-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msa-shop-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.msa-shop-card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.msa-shop-circle-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    color: #1c4fd4;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.msa-shop-circle-btn-primary {
+    background: #ffe600;
+}
+
+.msa-shop-card-price {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.shop-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffe600;
+}
+
+.shop-pts {
+    margin-left: 4px;
+    font-size: 12px;
+    color: #ffe600;
+}
+
+.msa-shop-more-wrap {
+    margin-top: 26px;
+    text-align: center;
+}
+
+.msa-shop-more-btn {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    color: #ffe600;
+    background: rgba(255, 255, 255, 0.06);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: .2px;
+    box-shadow: 
+        0 8px 22px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 1px rgba(255,255,255,.18);
+    transition: 0.2s ease;
+}
+
+.msa-shop-more-btn:hover {
+    background: #ffe600;
+    color: #0a2b6d;
+    transform: translateY(-2px);
+    box-shadow: 
+        0 12px 28px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 1px rgba(255,255,255,.2);
+}

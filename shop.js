@@ -126,3 +126,94 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+
+const products = {
+    goggles: {
+        title: "Speedo Goggles Blue",
+        subtitle: "Anti fog & UV protection swimming goggles",
+        description: "Designed for comfort, clarity, and performance...",
+        price: "$9.23 /923 Pt",
+        img: "images/Property 1=Variant4.png",
+        vertical: "SPEEDO"
+    },
+    XStream: {
+        title: "Xstream Red Cap",
+        subtitle: "Soft silicone cap built for everyday training",
+        description: "Built for speed and comfort...",
+        price: "$8.00 /800 Pt",
+        img: "images/hat.png",
+        vertical: "XSTREAM"
+    },
+    Shorts: {
+        title: "Speedo Shorts",
+        subtitle: "Durable shorts for daily swimming training",
+        description: "Built for comfort and durability...",
+        price: "$12.00 /1200 Pt",
+        img: "images/Property 1=Variant3.png",
+        vertical: "SPEEDO"
+    },
+    Cap: {
+        title: "MSA Cap",
+        subtitle: "Classic blue cap for outdoor comfort",
+        description: "Perfect for casual wear or training...",
+        price: "$6.50 /650 Pt",
+        img: "images/Property 1=Variant5.png",
+        vertical: "MSA"
+    }
+};
+
+let currentMain = "goggles";
+
+function changeProduct(item) {
+    if (item === currentMain) return;
+
+    const main = products[item];
+    document.getElementById("product-title").innerText = main.title;
+    document.getElementById("product-subtitle").innerText = main.subtitle;
+    document.getElementById("description").innerText = main.description;
+    document.getElementById("price").innerText = main.price;
+    document.getElementById("main-img").src = main.img;
+    document.getElementById("vertical-text").innerText = main.vertical;
+
+    currentMain = item;
+    updateCards();
+}
+
+function updateCards() {
+    const order = Object.keys(products).filter(key => key !== currentMain);
+    const cardImages = document.querySelectorAll("images/.suggest-card img");
+    const cardTexts = document.querySelectorAll("images/.suggest-card .item-name");
+
+    order.forEach((id, index) => {
+        cardImages[index].src = products[id].img;
+
+        cardTexts[index].innerHTML = products[id].title.split(" ").join("<br>");
+        cardImages[index].parentElement.setAttribute("onclick", `changeProduct('${id}')`);
+        cardTexts[index].parentElement.setAttribute("onclick", `changeProduct('${id}')`);
+    });
+}
+
+updateCards();
+
+
+document.querySelectorAll(".flip-card").forEach(card => {
+
+    card.querySelectorAll(".flip-open").forEach(btn => {
+        btn.addEventListener("click", e => {
+            e.stopPropagation();
+            card.classList.add("flipped");
+        });
+    });
+
+    card.querySelector(".close-flip").addEventListener("click", e => {
+        e.stopPropagation();
+        card.classList.remove("flipped");
+    });
+
+    card.querySelector(".msa-shop-card-image").addEventListener("click", () => {
+        card.classList.add("flipped");
+    });
+});
+
+
