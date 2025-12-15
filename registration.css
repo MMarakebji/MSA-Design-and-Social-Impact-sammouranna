@@ -1516,10 +1516,10 @@ body{ padding-top: 0 !important; }
   z-index:1;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.25) 0%,     /* slight shade at top */
-    rgba(0,0,0,0.05) 35%,    /* almost clear in middle */
-    rgba(0,0,0,0.35) 70%,    /* start darkening */
-    rgba(0,0,0,0.75) 100%    /* strong shade at bottom */
+    rgba(4,16,60,0.65) 0%,
+    rgba(4,16,60,0.35) 40%,
+    rgba(4,16,60,0.6) 70%,
+    rgba(4,16,60,0.85) 100%
   );
 }
 
@@ -1547,4 +1547,85 @@ html{ scroll-behavior: smooth; }
   object-position: 48% center; /* slight nudge left */
 }
 
+/* ✅ REMOVE LEFT/RIGHT SCROLLBAR (horizontal overflow) */
+html, body{
+  width: 100%;
+  overflow-x: hidden !important;
+}
 
+/* keep layout math safe everywhere */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* ✅ Your hero has margin: 22px left/right → force width to match */
+.hero-section{
+  width: calc(100% - 44px) !important; /* 22px + 22px */
+}
+
+/* ✅ Make sure nav headers don’t create overflow */
+.top-nav,
+.msa-nav-signed{
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* ✅ Media should never overflow */
+img, video{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* ✅ 1) Lower video opacity slightly */
+.hero-section .hero-video{
+  opacity: 0.88;              /* change: 0.8 - 0.95 */
+}
+
+/* ✅ 2) Fade the video from below (bottom dark fade) */
+.hero-section::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height: 260px;              /* fade height */
+  pointer-events:none;
+  z-index: 1;                 /* above video, below text */
+  border-radius: inherit;     /* match your rounded hero */
+
+  background: linear-gradient(
+    to top,
+    rgba(2, 9, 42, 0.95) 0%,
+    rgba(2, 9, 42, 0.55) 45%,
+    rgba(2, 9, 42, 0.0) 100%
+  );
+}
+
+/* keep text + button above the fade */
+.hero-content{ position: relative; z-index: 2; }
+.sound-btn{ position: absolute; z-index: 3; }
+
+/* Match hero video tint/fade to design reference */
+.hero-section .hero-video{
+  opacity: 0.7;
+  filter: saturate(1.05);
+}
+
+.hero-section::before{
+  background: linear-gradient(
+    to bottom,
+    rgba(4,16,60,0.65) 0%,
+    rgba(4,16,60,0.35) 40%,
+    rgba(4,16,60,0.6) 70%,
+    rgba(4,16,60,0.88) 100%
+  );
+}
+
+.hero-section::after{
+  height: 320px; /* stronger, taller bottom fade */
+  background: linear-gradient(
+    to top,
+    rgba(4,16,60,0.98) 0%,
+    rgba(4,16,60,0.78) 45%,
+    rgba(4,16,60,0.08) 100%
+  );
+}
