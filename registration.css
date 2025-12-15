@@ -1217,26 +1217,6 @@ html, body{
   animation: lineAround 3.5s linear infinite;
 }
 
-/* SAME animation but uses exact border positions */
-@keyframes lineAround{
-  /* TOP: left -> right */
-  0%   { top: calc(var(--bw) / -2); left: 0; transform: rotate(0deg); }
-  24%  { top: calc(var(--bw) / -2); left: calc(100% - var(--len)); transform: rotate(0deg); }
-
-  /* RIGHT: top -> bottom */
-  25%  { top: 0; left: calc(100% - var(--bw) / 2); transform: rotate(90deg); }
-  49%  { top: calc(100% - var(--len)); left: calc(100% - var(--bw) / 2); transform: rotate(90deg); }
-
-  /* BOTTOM: right -> left */
-  50%  { top: calc(100% - var(--bw) / 2); left: calc(100% - var(--len)); transform: rotate(180deg); }
-  74%  { top: calc(100% - var(--bw) / 2); left: 0; transform: rotate(180deg); }
-
-  /* LEFT: bottom -> top */
-  75%  { top: calc(100% - var(--len)); left: calc(var(--bw) / -2); transform: rotate(270deg); }
-  100% { top: calc(var(--bw) / -2); left: calc(var(--bw) / -2); transform: rotate(270deg); }
-}
-
-
 .levels-section{
   padding-bottom: 140px !important;  /* increase/decrease */
 }
@@ -1330,5 +1310,241 @@ html, body{
   transform: translateY(1px);
 }
 
+.sound-btn{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  z-index:3;
+  padding:10px 14px;
+  border-radius:12px;
+  border:0;
+  background:#fff;
+  color:#0b2f86;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.hero-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills the header */
+  z-index: 0;
+}
+
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
+
+/* optional: dark overlay so text is readable */
+.hero-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+  z-index:1;
+}
+
+/* ✅ 1) Make the hero/video taller */
+.hero-section{
+  min-height: 120vh;   /* increase: 110vh / 130vh */
+}
+
+/* make sure the video follows the new height */
+.hero-video{
+  height: 100%;
+}
+
+/* ✅ 2) Blur ONLY the top part (soft blur overlay) */
+.hero-section::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; top:0;
+  height: 140px;                /* blur area height */
+  z-index: 1;
+  pointer-events:none;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* smooth blur fade */
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+/* ✅ 3) Fade from bottom (blue fade like your page) */
+.hero-section .video-fade-bottom{
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height: 220px;               /* fade height */
+  z-index: 1;
+  pointer-events:none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(2,9,42,0) 0%,
+    rgba(2,9,42,0.55) 55%,
+    rgba(2,9,42,1) 100%
+  );
+}
+/* ✅ Put your fixed header height here */
+:root{
+  --navH: 92px; /* change to 80px / 100px until perfect */
+}
+
+/* hero starts under the header */
+.hero-section{
+  position: relative;
+  margin-top: var(--navH);
+  height: 72vh;        /* ✅ smaller video/hero height */
+  min-height: 520px;   /* optional */
+  overflow: hidden;
+}
+
+/* video fills hero only */
+.hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* keep content above video */
+.hero-content{
+  position: relative;
+  z-index: 2;
+}
+
+/* overlay stays correct */
+.hero-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+  z-index:1;
+  pointer-events:none;
+}
+
+/* sound button stays visible */
+.sound-btn{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  z-index:3;
+}
+
+
+:root{
+  --navH: 92px; /* adjust until it matches your navbar height */
+}
+
+/* remove the body push-down if you added it before */
+body{ padding-top: 0 !important; }
+
+/* NAV stays on top of the video */
+.top-nav{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  background: transparent; /* so video shows behind it */
+}
+
+/* HERO starts from top like the screenshot */
+.hero-section{
+  position: relative;
+  height: 100vh;              /* full screen header */
+  overflow: hidden;
+  border-radius: 40px;        /* like screenshot */
+  margin: 18px 22px 0;        /* space from edges */
+}
+
+/* video fills the hero */
+.hero-section > .hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* dark overlay for readability */
+.hero-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+/* text starts under navbar */
+.hero-content{
+  position: relative;
+  z-index: 2;
+  padding-top: calc(var(--navH) + 30px);
+}
+
+/* sound button on top */
+.sound-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 3;
+}
+
+/* no blur */
+.hero-section .hero-video{
+  filter: none !important;
+  transform: none !important;
+}
+
+/* Top = slight fade, Bottom = strong fade */
+.hero-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25) 0%,     /* slight shade at top */
+    rgba(0,0,0,0.05) 35%,    /* almost clear in middle */
+    rgba(0,0,0,0.35) 70%,    /* start darkening */
+    rgba(0,0,0,0.75) 100%    /* strong shade at bottom */
+  );
+}
+
+/* keep content above overlay */
+.hero-content{ position: relative; z-index: 2; }
+.sound-btn{ z-index: 3; }
+
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+}
+html{ scroll-behavior: smooth; }
+
+/* NAV (registration page): align font size with shop nav */
+.top-nav .desktop-nav,
+.top-nav .desktop-nav a,
+.msa-nav-links{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px !important;
+}
+
+/* Keep hero video perfectly centered */
+.hero-section > .hero-video{
+  object-position: 48% center; /* slight nudge left */
+}
 
 
