@@ -4,9 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 
-/* =========================================================
-   BASE + PAGE BACKGROUND
-   ========================================================= */
+
 *,
 *::before,
 *::after {
@@ -18,6 +16,23 @@
   src: url("fonts/Qonquer.otf") format("truetype");
   font-weight: 400;
 }
+
+h1, h2, h3, h4, h5, h6,
+.main-title,
+.title,span,
+.product-title,
+.suggested-heading,
+.msa-shop-header h2,
+.msa-exclusives-header h2,
+.msa-custom-title,
+.msa-custom-label.big,
+.msa-ex-tag,
+.msa-ex-headline,
+.msa-ex-mini-title {
+  font-family: "Qonquer Sans", sans-serif !important;
+  font-weight: 300 !important;
+}
+
 
 body {
   margin: 0;
@@ -246,13 +261,15 @@ body {
     position: absolute;
     right: -60px;
     top: 200px;
-    font-size: 60px;
+    font-size: 100px;
     color: #f4e80a;
     writing-mode: vertical-rl;
     font-weight: 800;
     letter-spacing: 2px;
     right: 100px;
     z-index: 3;
+    font-family: "Qonquer Sans", sans-serif !important;
+    font-weight: 300 !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
