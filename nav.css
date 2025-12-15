@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* .montserrat <uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Qonquer Sans";
+  src: url("fonts/Qonquer.otf") format("truetype");
+  font-weight: 1000;
+  
+}
+
+@font-face {
+  font-family: "Qonquer Sans";
+  src: url("fonts/Qonquer.otf") format("truetype");
+  font-weight: 400;
+  
+}
+
+
+
+
+
+.msa-nav-signed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 14px 0;
+  background: transparent;     
+  backdrop-filter: none;       
+}
+
+
+.msa-nav-inner {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.msa-nav-logo img {
+  height: 60px;
+}
+
+.msa-nav-links {
+  display: flex;
+  gap: 28px;
+    margin-right: 280px;
+}
+
+.msa-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.9;
+}
+
+.msa-nav-links a:hover {
+  opacity: 1;
+}
+
+.msa-nav-links a.active {
+  color: #ffd600;
+  font-weight: 700;
+}
+
+.msa-nav-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.msa-user-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;     
+  border: none;               
+  width: auto;
+  height: auto;
+  padding: 0;
+  text-decoration: none;
+}
+
+.msa-user-icon img{
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+
+.msa-points-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.msa-shark-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #2f7bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  padding-top: 90px;
+}
+
+@media (max-width: 900px) {
+  .msa-nav-links {
+    display: none;
+  }
+}
+
+
+.msa-points-combo{
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.msa-points-text{
+  padding: 0 14px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.msa-points-shark{
+  height: 38px;
+  width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2f7bff;
+}
+
+.msa-points-shark img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+
+
+.points-wrap{
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+  border-radius: 15px;
+  background: #ffffff;         
+  padding: 0;                  
+}
+
+.points-blue{
+  height: 46px;
+  border-radius: 15px;
+  background: rgba(23, 88, 195, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 10px 0 10px;
+  margin-left: 5px;          
+}
+
+.points-text{
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.points-shark{
+  width: 28px;
+  height: auto;
+  display: block;
+}
+
+
+.msa-profile-dd{
+  position: relative;
+}
+
+.msa-profile-toggle{
+  cursor: pointer;
+}
+
+.msa-profile-menu{
+  position: absolute;
+  top: 46px;
+  right: -6px;
+    width: 250px; 
+
+  opacity: 0;
+  transform: translateY(-8px) scale(0.98);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 9999;
+}
+
+.msa-profile-dd.is-open .msa-profile-menu{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.msa-profile-card{
+  background: #1f67d6;
+  padding: 14px 14px 12px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.40);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.msa-profile-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.msa-profile-avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.msa-profile-edit{
+  width: 14px;
+  height: 14px;
+  border-radius: 12px;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.msa-profile-edit img{
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.msa-profile-name{
+  font-size: 30px;
+  margin: 6px 0 8px;
+    font-family: "Qonquer Sans";
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.msa-profile-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+
+  margin-bottom: 14px;
+}
+
+.msa-profile-row{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.msa-profile-row img{
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.msa-profile-btn{
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 10px;
+  background: #ffe600;
+  color: #08307a;
+  font-weight: 800;
+  font-size: 12px;
+  text-decoration: none;
+    width: max-content;  
+  margin: 6px auto 8px;
+    font-family: "Montserrat", sans-serif;
+
+    flex-direction: row-reverse;
+}
+
+.msa-profile-btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.msa-profile-signout{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.9;
+    flex-direction: row-reverse;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.msa-profile-signout:hover{
+  opacity: 1;
+}
+
+
+
+.msa-profile-btn{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.msa-profile-btn .btn-icon{
+  width: 18px;
+  height: auto;
+}
+
+.msa-profile-signout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.msa-profile-signout .signout-icon{
+  width: 16px;
+  height: auto;
+}
+
+
+#navSignedIn[hidden],
+#navSignedOut[hidden] {
+  display: none !important;
+}

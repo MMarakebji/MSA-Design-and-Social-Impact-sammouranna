@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSA | Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="login.css" />
+</head>
+
+<body>
+  <main class="auth">
+
+    <section class="auth-left">
+      <a class="auth-back" href="index.html">&#8592;</a>
+
+      <div class="auth-center">
+        <img class="auth-logo" src="images/msa-logo.png" alt="MSA">
+
+        <h1 class="auth-title">
+          SIGN IN TO <span>YOUR ACCOUNT</span>
+        </h1>
+
+        <p class="auth-sub">
+          Don’t have an account?
+          <a href="signup.html">Sign Up</a>
+        </p>
+
+        <form class="auth-form" id="loginForm" novalidate>
+
+          <div class="stack-card">
+
+            <div class="field">
+              <img src="images/mail-sign.png" class="input-icon" alt="">
+              <input type="email" placeholder="msa@gmail.com" required>
+            </div>
+
+            <div class="field">
+              <img src="images/password-sign.png" class="input-icon" alt="">
+              <input type="password" id="password" placeholder="********" required>
+
+              <button class="eye" type="button" id="togglePass">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7Zm0 12a5 5 0 1 1 5-5 5 5 0 0 1-5 5Zm0-8a3 3 0 1 0 3 3 3 3 0 0 0-3-3Z" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <a href="#" class="forgot">Forgot Your Password ?</a>
+
+          <button class="auth-submit" type="submit">Log In</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="auth-right">
+      <img src="images/signup-swimmer.jpg" alt="">
+    </section>
+
+  </main>
+
+  <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,4 @@
-/* =========================================================
-   GOOGLE FONTS
-   ========================================================= */
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 
@@ -47,7 +45,6 @@ body {
 
 
 
-/* responsive */
 @media (max-width: 768px) {
   .msa-shop-card {
     width: 46%;
@@ -213,11 +210,11 @@ body {
 }
 
 .suggest-card img {
-    width: 170px;              /* base size */
+    width: 170px;              
     height: auto;
     object-fit: contain;
-    transform: scale(1.45);    /* makes image bigger */
-    transform-origin: center;  /* grows inside the box */
+    transform: scale(1.45);    
+    transform-origin: center;  
     pointer-events: none;
     cursor: pointer;
 }
@@ -290,9 +287,9 @@ body {
 body {
     background: linear-gradient(
     180deg,
-    #00225c 0%,     /* dark top */
-    #1B5BC4 45%,    /* bright middle (your color) */
-    #00225c 100%    /* dark bottom */
+    #00225c 0%,     
+    #1B5BC4 45%,    
+    #00225c 100%    
 );
 }
 
@@ -512,9 +509,7 @@ body {
 
 
 
-/* =========================================================
-   SECTION WRAPPER (EXISTING EXCLUSIVES)
-   ========================================================= */
+
 .msa-exclusives {
   padding: 50px 0 70px;
 }
@@ -526,9 +521,7 @@ body {
 }
 
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+
 .msa-exclusives-header {
   text-align: center;
   margin-bottom: 20px;
@@ -558,9 +551,6 @@ body {
 }
 
 
-/* =========================================================
-   GRID LAYOUT
-   ========================================================= */
 .msa-ex-grid {
   max-width: 880px;
   margin: 0 auto;
@@ -574,9 +564,7 @@ body {
 }
 
 
-/* =========================================================
-   CARD BASE
-   ========================================================= */
+
 .msa-ex-card {
   background: #ffffff;
   border-radius: 22px;
@@ -585,9 +573,6 @@ body {
 }
 
 
-/* =========================================================
-   SHIRT CARD — LEFT
-   ========================================================= */
 .msa-ex-card--shirt {
   grid-area: shirt;
   display: grid;
@@ -597,9 +582,9 @@ body {
   padding: 20px 22px;
   grid-column: span 1;
   max-width: 100%;
-  min-height: 360px;        /* lock card height so it doesn't shrink */
+  min-height: 360px;        
   position: relative;
-  overflow: hidden;         /* for swirl background */
+  overflow: hidden;         
 }
 
 .msa-ex-middle {
@@ -620,7 +605,6 @@ body {
 }
 
 
-/* ---------- Swirl behind tshirt ---------- */
 .msa-ex-card--shirt::before {
   content: "";
   position: absolute;
@@ -634,16 +618,12 @@ body {
   z-index: 1;
 }
 
-/* T-shirt content above swirl */
 .msa-ex-card--shirt > * {
   position: relative;
   z-index: 2;
 }
 
 
-/* =========================================================
-   CAP CARD — TOP RIGHT
-   ========================================================= */
 .msa-ex-card--cap {
   grid-area: cap;
   display: flex;
@@ -690,9 +670,7 @@ body {
 }
 
 
-/* =========================================================
-   OTHER SMALL CARDS
-   ========================================================= */
+
 .msa-ex-card--accessories {
   grid-area: accessories;
 }
@@ -708,17 +686,13 @@ body {
   margin: 4px auto 0;
 }
 
-/* Bigger accessories & swimcap images */
+
 .msa-ex-card--accessories .msa-ex-img,
 .msa-ex-card--swimcap .msa-ex-img {
   max-width: 120px;
   margin-top: 8px;
 }
 
-
-/* =========================================================
-   TEXT STYLING
-   ========================================================= */
 .msa-ex-tag {
   font-size: 25px;
   font-weight: 400;
@@ -768,9 +742,7 @@ body {
 }
 
 
-/* =========================================================
-   RESPONSIVE — MOBILE
-   ========================================================= */
+
 @media (max-width: 992px) {
   .msa-ex-grid {
     grid-template-columns: 1fr;
@@ -791,20 +763,12 @@ body {
   }
 }
 
-
-/* =========================================================
-   SPACING FIX
-   ========================================================= */
 .msa-ex-tag-sub {
   margin-bottom: 0 !important;
 }
 
 
-/* =========================================================
-   CUSTOMIZER: BUTTON + LAYOUT
-   ========================================================= */
 
-/* Customize button */
 .msa-btn-customize {
   display: inline-flex;
   align-items: center;
@@ -824,12 +788,11 @@ body {
   height: 44px;
 
   white-space: nowrap;
-  min-width: 140px;   /* ⬅️ ONLY THING YOU NEED TO CHANGE */
+  min-width: 140px;   
 }
 
 
 
-/* small square around icon */
 .msa-btn-icon-wrap {
   width: 34px;
   height: 34px;
@@ -842,15 +805,14 @@ body {
 }
 
 
-/* smaller icon */
 .msa-btn-icon-wrap img {
   width: 18px;
   height: auto;
   display: block;
 }
 .msa-btn-customize {
-  font-size: 13px;   /* smaller text */
-  font-weight: 600;  /* keep same style */
+  font-size: 13px;   
+  font-weight: 600;  
 }
 
 
@@ -858,27 +820,22 @@ body {
   background: #274fe0;
 }
 
-/* =========================================================
-   CUSTOMIZER POPUP LAYOUT
-   ========================================================= */
 .msa-customizer {
   position: fixed;
   inset: 0;
-  display: none;                    /* hidden by default */
+  display: none;                   
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.55);  /* dim full page */
-  z-index: 99999;                   /* SUPER high so it beats everything */
+  background: rgba(0, 0, 0, 0.55);  
+  z-index: 99999;                  
 }
 
-/* when open */
 .msa-customizer.is-open {
   display: flex;
 }
 
-/* popup card */
 .msa-customizer-dialog {
-  position: relative;               /* keep X button, etc. on top inside */
+  position: relative;               
   background: #ffffff;
   border-radius: 70px;
   max-width: 960px;
@@ -887,20 +844,17 @@ body {
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
-/* two-column layout inside popup */
 .msa-custom-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
   gap: 24px;
 }
 
-/* left column = wizard content */
 .msa-custom-left {
   display: flex;
   flex-direction: column;
 }
 
-/* right column = shirt preview */
 .msa-custom-preview {
   background: #f5f5f5;
   border-radius: 20px;
@@ -915,7 +869,6 @@ body {
   display: block;
 }
 
-/* close (X) button */
 .msa-custom-close {
   position: absolute;
   top: 18px;
@@ -931,22 +884,21 @@ body {
   cursor: pointer;
 }
 
-/* ========= TOP NAV TABS (Items / Text / Colors) ========= */
+
 .msa-custom-tabs {
-  width: 100%;                      /* full width bar */
-  background: #1f4ecb;              /* blue pill bar */
+  width: 100%;                     
+  background: #1f4ecb;              
   border-radius: 10px;
   
   display: flex;
-  justify-content: center;          /* << CENTER CONTENT */
+  justify-content: center;          
   align-items: center;
 
-  gap: 40px;                         /* spacing between Items/Text/Colors */
+  gap: 40px;                         
   padding: 8px 20px;
   margin-bottom: 20px;
 }
 
-/* each tab text */
 .msa-custom-tab {
   border: none;
   background: transparent;
@@ -958,19 +910,16 @@ body {
   cursor: pointer;
 }
 
-/* active tab = white pill inside the blue bar */
 .msa-custom-tab.active {
   background: #ffffff;
   color: #1f4ecb;
 }
 
 
-/* remove old outline/border hover styles if any */
 .msa-custom-tab:focus {
   outline: none;
 }
 
-/* Panels */
 .msa-custom-panel {
   display: none;
 }
@@ -979,12 +928,11 @@ body {
   display: block;
 }
 
-/* Footer buttons */
 .msa-custom-footer {
   display: flex;
   align-items: center;
-  gap: 10px;              /* space between buttons */
-  justify-content: flex-start;   /* << LEFT align (for Text step) */
+  gap: 10px;              
+  justify-content: flex-start;   
   margin-top: 18px;
 }
 
@@ -1014,7 +962,6 @@ body {
   cursor: default;
 }
 
-/* make popup responsive on small screens */
 @media (max-width: 768px) {
   .msa-customizer-dialog {
     padding: 18px 16px;
@@ -1030,9 +977,7 @@ body {
 }
 
 
-/* =========================================================
-   CUSTOMIZER STEP 1 — ITEMS
-   ========================================================= */
+
 .msa-custom-title {
   font-size: 20px;
   font-weight: 700;
@@ -1098,14 +1043,7 @@ body {
 }
 
 
-/* =========================================================
-   CUSTOMIZER STEP 2 — TEXT
-   ========================================================= */
-/* =========================================================
-   CUSTOMIZER STEP 2 — TEXT
-   ========================================================= */
 
-/* Main title: "Customize Text" */
 .msa-custom-panel[data-step="2"] .msa-custom-title {
   font-size: 28px;
   font-weight: 700;
@@ -1113,14 +1051,12 @@ body {
   margin: 0 0 14px 0;
 }
 
-/* Sub-title: "Suggestion Quotes" */
 .msa-custom-panel[data-step="2"] .msa-custom-title.small {
   font-size: 22px;
   font-weight: 700;
   margin: 24px 0 10px 0;
 }
 
-/* Text input row */
 .msa-custom-panel[data-step="2"] .msa-text-input-wrap {
   position: relative;
   margin-bottom: 8px;
@@ -1141,7 +1077,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* 0/32 counter inside input */
 .msa-custom-panel[data-step="2"] .msa-char-count {
   position: absolute;
   right: 16px;
@@ -1151,7 +1086,6 @@ body {
   opacity: 0.9;
 }
 
-/* Quote pills */
 .msa-custom-panel[data-step="2"] .msa-quote-list {
   display: flex;
   flex-wrap: wrap;
@@ -1176,7 +1110,6 @@ body {
   background: #d2dbff;
 }
 
-/* Footer arrows on the left, side-by-side */
 .msa-custom-panel[data-step="2"] .msa-custom-footer {
   display: flex;
   justify-content: flex-start;
@@ -1185,34 +1118,27 @@ body {
   margin-top: 28px;
 }
 
-/* =========================================================
-   FIXED COUNTER (STEP 1 — ITEMS)
-   ========================================================= */
 
-/* container around -, number, + */
 .msa-qty-row {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-
-  background: #1f4ecb;              /* BLUE background */
+  background: #1f4ecb;              
   border-radius: 10px;
-
   padding: 8px 18px;
   height: 40px;
-
   color: white;
   font-size: 18px;
   font-weight: 700;
 }
 
-/* minus + plus buttons */
+
 .msa-qty-btn {
   width: 26px;
   height: 26px;
   border-radius: 6px;
   border: none;
-  background: transparent;           /* keep transparent to show blue behind */
+  background: transparent;           
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -1226,14 +1152,13 @@ body {
   padding: 0;
 }
 
-/* prevent weird browser button styles */
+
 .msa-qty-btn:focus,
 .msa-qty-btn:active {
   outline: none;
   box-shadow: none;
 }
 
-/* the number */
 .msa-qty-value {
   min-width: 20px;
   text-align: center;
@@ -1244,11 +1169,6 @@ body {
 
 
 
-/* =========================================================
-   CUSTOMIZER — IMAGE SIZE INSIDE CUSTOM MODE
-   ========================================================= */
-
-/* When customizing, make the T-shirt image smaller but keep card size */
 .msa-ex-left.is-customizing ~ .msa-ex-middle .msa-ex-middle-card img {
   max-width: 220px !important;
   width: 100%;
@@ -1256,11 +1176,6 @@ body {
 
 
 
-/* ========= COLORS STEP (tab "Colors") ========= */
-
-/* ========= COLORS STEP (tab "Colors") ========= */
-
-/* Headings: "Choose Color", "Pick Your Size" */
 .msa-custom-panel[data-step="3"] .msa-custom-label.big {
   font-size: 28px;
   font-weight: 700;
@@ -1268,14 +1183,14 @@ body {
   margin: 0 0 16px 0;
 }
 
-/* Color row */
+
 .msa-color-row {
   display: flex;
   gap: 10px;
   margin-bottom: 26px;
 }
 
-/* Outer color pill */
+
 .msa-color-swatch {
   width: 80px;
   height: 56px;
@@ -1286,7 +1201,6 @@ body {
   cursor: pointer;
 }
 
-/* Inner colored shape */
 .msa-color-swatch::before {
   content: "";
   position: absolute;
@@ -1295,17 +1209,15 @@ body {
   background: currentColor;
 }
 
-/* Actual colors */
 .msa-color-blue  { color: #1f4ecb; }
 .msa-color-white { color: #ffffff; }
 .msa-color-black { color: #000000; }
 
-/* Active color highlight */
+
 .msa-color-swatch.active {
   box-shadow: 0 0 0 3px #ffe600;
 }
 
-/* Sizes row (S M L XL) */
 .msa-size-row {
   display: flex;
   gap: 12px;
@@ -1327,13 +1239,13 @@ body {
   justify-content: center;
 }
 
-/* Active size */
+
 .msa-size-row .msa-pill.small.active {
   background: #1f4ecb;
   color: #ffffff;
 }
 
-/* Circular nav buttons (used in all steps) */
+
 .msa-nav-circle {
   width: 52px;
   height: 52px;
@@ -1353,23 +1265,21 @@ body {
   pointer-events: none;
 }
 
-/* Colors step footer: arrow + 2 buttons next to each other */
 .msa-custom-panel[data-step="3"] .msa-custom-footer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;   /* everything starts from the left */
-  gap: 18px;                     /* space between arrow / buttons */
+  justify-content: flex-start;  
+  gap: 18px;                     
   margin-top: 32px;
 }
 
 
 
-/* Middle button: Add another Item */
 .msa-step-secondary {
   border-radius: 10px !important;
   border: none;
-  background: #1f4ecb;           /* blue pill */
-  color: #ffffff;               /* white text */
+  background: #1f4ecb;          
+  color: #ffffff;               
   padding: 12px 32px;
   font-size: 20px;
   font-weight: 700;
@@ -1377,14 +1287,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
-/* Check Out button (blue pill with yellow text & border) */
-/* Right button: Check Out */
 .msa-step-checkout {
   border-radius: 10px !important;
-  border: 2px solid #ffe600;    /* yellow border */
-  background: #1f4ecb;          /* blue pill */
-  color: #ffe600;               /* yellow text/icon */
+  border: 2px solid #ffe600;   
+  background: #1f4ecb;       
+  color: #ffe600;             
   padding: 12px 32px;
   font-size: 20px;
   font-weight: 700;
@@ -1395,7 +1302,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* little bag icon before "Check Out" */
+
 .msa-icon-bag {
   width: 18px;
   height: 18px;
@@ -1420,39 +1327,35 @@ body {
   display: flex;
   gap: 12px;
   padding: 10px 14px;
-  background: #1f4ecb;           /* outer blue bar */
+  background: #1f4ecb;          
   border-radius: 18px;
-  width: fit-content;             /* shrink to content */
+  width: fit-content;             
   margin-bottom: 26px;
 }
 
-/* Each color swatch (small rounded squares) */
 .msa-color-swatch {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: #1f4ecb;            /* base (replaced by currentColor) */
+  background: #1f4ecb;  
   border: none;
   cursor: pointer;
   position: relative;
   padding: 0;
 }
 
-/* Inner square showing actual color */
 .msa-color-swatch::before {
   content: "";
   position: absolute;
-  inset: 5px;                     /* inner margin */
+  inset: 5px;                    
   border-radius: 8px;
-  background: currentColor;       /* dynamic color */
+  background: currentColor;      
 }
 
-/* Colors */
-.msa-color-blue  { color: #002f85; }   /* darker navy blue like the screenshot */
+.msa-color-blue  { color: #002f85; }   
 .msa-color-white { color: #ffffff; }
 .msa-color-black { color: #000000; }
 
-/* Active (selected) color: yellow outline */
 .msa-color-swatch.active::after {
   content: "";
   position: absolute;
@@ -1462,7 +1365,6 @@ body {
 }
 
 
-/* ========= FOOTER BUTTONS (Back / Add / Check Out) ========= */
 
 .msa-custom-footer {
   display: flex;
@@ -1471,8 +1373,6 @@ body {
   margin-top: 18px;
 }
 
-/* circle nav arrows */
-/* Circle navigation buttons (Next / Back) */
 .msa-nav-circle {
   width: 46px;
   height: 46px;
@@ -1489,14 +1389,12 @@ body {
 }
 
 
-/* arrow icons inside button */
 .msa-nav-circle img {
-  width: 22px;      /* adjust size here */
+  width: 22px;      
   height: 22px;
   pointer-events: none;
 }
 
-/* Title + quantity on the same row */
 .msa-select-title-row {
   display: flex;
   align-items: center;
@@ -1525,7 +1423,6 @@ body {
   gap: 6px;
 }
 
-/* middle "Add another Item" */
 .msa-step-secondary {
   border-radius: 999px;
   border: none;
@@ -1537,7 +1434,6 @@ body {
   cursor: pointer;
 }
 
-/* bag icon for checkout */
 .msa-icon-bag {
   width: 16px;
   height: 16px;
@@ -1568,10 +1464,6 @@ body {
 
 
 
-/* =========================================================
-   HALF-SIZE BUTTON WITH MORE HEIGHT
-   ========================================================= */
-
 .msa-ex-card--shirt .msa-btn-customize {
   display: inline-flex;
   align-items: center;
@@ -1586,19 +1478,18 @@ body {
   font-weight: 600;
 
   padding: 5px 8px;       
-  border-radius: 8px;        /* slightly rounder for a taller button */
+  border-radius: 8px;       
   border: 2px solid #1f4ecb;
 
-  height: 30px;              /* ⬅️ increased height */
+  height: 30px;              
   white-space: nowrap;
 
   width: auto;
   min-width: auto;
 }
 
-/* Icon box */
 .msa-ex-card--shirt .msa-btn-icon-wrap {
-  width: 20px;               /* slightly larger for taller button */
+  width: 20px;               
   height: 20px;
   border-radius: 5px;
   background: #ffffff;
@@ -1608,34 +1499,27 @@ body {
   justify-content: center;
 }
 
-/* Pen icon */
 .msa-ex-card--shirt .msa-btn-icon-wrap img {
   width: 10px;
   height: auto;
 }
-/* Hover effect for Customize button */
 .msa-ex-card--shirt .msa-btn-customize:hover {
-  color: #d1d9ef;             /* lighter blue hover */
-     /* smooth animation */
+  color: #d1d9ef;             
 }
-/* =========================================================
-   SPARK EFFECT ON HOVER (Customize button)
-   ========================================================= */
 
-/* make icon container a positioning parent */
+
 .msa-ex-card--shirt .msa-btn-icon-wrap {
   position: relative;
   overflow: visible;
 }
 
-/* hidden sparks by default */
 .msa-ex-card--shirt .msa-btn-icon-wrap::before,
 .msa-ex-card--shirt .msa-btn-icon-wrap::after {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
-  background-image: url("images/Star5.png"); /* your spark image */
+  background-image: url("images/Star5.png"); 
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -1644,7 +1528,6 @@ body {
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
-/* positions of the two sparks */
 .msa-ex-card--shirt .msa-btn-icon-wrap::before {
   top: 2px;
   left: 4px;
@@ -1655,7 +1538,6 @@ body {
   right: 2px;
 }
 
-/* on hover: show + pop out the sparks */
 .msa-ex-card--shirt .msa-btn-customize:hover .msa-btn-icon-wrap::before,
 .msa-ex-card--shirt .msa-btn-customize:hover .msa-btn-icon-wrap::after {
   opacity: 1;
@@ -1664,23 +1546,22 @@ body {
 
 
 
-/* FIX TEXT SPACING IN MSA EXCLUSIVES */
 .msa-ex-tag {
-  margin: 0 0 6px 0 !important;       /* Title spacing */
+  margin: 0 0 6px 0 !important;       
 }
 
 .msa-ex-tag-sub {
-  margin: 0 0 10px 0 !important;      /* Subtitle spacing */
+  margin: 0 0 10px 0 !important;      
 }
 
 .msa-ex-headline {
-  margin: 10px 0 14px 0 !important;   /* Big headline spacing */
+  margin: 10px 0 14px 0 !important;  
 }
 
 .msa-ex-mini-title {
-  margin: 8px 0 8px 0 !important;     /* Cap + small cards title spacing */
+  margin: 8px 0 8px 0 !important;     
 }
 
 .msa-ex-card--shirt .msa-btn-customize {
-  margin-top: 12px !important;        /* Space before button */
+  margin-top: 12px !important;       
 }

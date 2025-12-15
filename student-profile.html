@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shark Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="student-profile.css">
+    <link rel="stylesheet" href="footer.css">
+
+
+</head>
+
+<body>
+    <style>
+        .msa-footer {
+            width: 100%;
+            background: linear-gradient(180deg, #001848 0%, #001235 100%);
+            color: #ffffff;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+    </style>
+    <header class="msa-nav-signed">
+        <div class="msa-nav-inner">
+
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="student-profile.html" class="active">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="index.html"id="signOutBtn"> 
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+         <section id="hero">
+            <div class="container hero-inner">
+                <div>
+                    <h1 class="title">
+                        TRACK YOUR CHILDS <br>PROGRESS
+                        <span>STROKE</span> <br> <span>By STROKE</span>
+                    </h1>
+                    <p class="discreption">
+                        Every little step forward measured, levels assessments, speed, coach’s comment and
+                        overall progress tracking for all your childs.
+                    </p>
+                </div>
+                <div class="hero-visual">
+                    <img class="hero-chart" src="images/stats-line.png" alt="Progress chart">
+                    <img class="hero-shark" src="images/shark-icon-white1.png" alt="Shark">
+                </div>
+
+            </div>
+        </section>
+
+         <section class="student-section">
+            <div class="container student-inner">
+
+                <div class="student-left">
+                    <p class="student-name-first">ALI ALI</p>
+                    <p class="student-name-last">EL ALAWIYE</p>
+
+                    <div class="student-id-pill">ID: 2023001</div>
+
+                    <div class="student-basic-info">
+                        <p>Age: 8 y.o.</p>
+                        <p>Gender: Male</p>
+                        <p>From: Chehim</p>
+                    </div>
+
+                    <div class="student-metrics-row">
+                        <div class="student-metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">ATTENDANCE</span>
+                        </div>
+                        <div class="student-metric">
+                            <span class="metric-value">1.1<span class="metric-unit"> m/s</span></span>
+                            <span class="metric-label">SPEED</span>
+                        </div>
+                        <div class="student-metric">
+                            <span class="metric-value">174<span class="metric-unit metric-unit-small"> cm</span></span>
+                            <span class="metric-label">HEIGHT</span>
+                        </div>
+                    </div>
+
+                    <div class="student-comments">
+
+                         <article class="coach-bubble">
+                            <div class="coach-bubble__header">
+                                <span class="coach-bubble__name">Coach Raghad Mrad</span>
+                                <span class="coach-bubble__date">17/06/2026</span>
+                            </div>
+
+                            <p class="coach-bubble__text">
+                                Great overall improvement, needs more focus on the streamline technique and breath
+                                tempo.
+                            </p>
+                        </article>
+
+
+                         <article class="review-card">
+                            <div class="review-card__meta">
+                                <span class="review-card__name">Coach Raghad Mrad</span>
+                                <span class="review-card__date">05/12/2025</span>
+                            </div>
+                            <p class="review-card__text">
+                                Ali has shown the true shark spirit by overcoming his fear of diving through hunger
+                                and hardwork, keep it up !!
+                            </p>
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="student-center">
+                    <img src="imgs/swirl.png" alt="" class="swirl-bg">
+                    <img src="images/Kid-1.png" alt="Ali Ali El Alawiye" class="student-photo">
+                </div>
+
+                <div class="student-right">
+                    <div class="level-dd" id="level-dd-1">
+                        <button class="level-dd__btn" type="button" aria-expanded="false">
+                            <span class="level-dd__text" style="font-size: 25px;">LEVEL 1</span>
+                            <span class="level-dd__chev">&gt;</span>
+                        </button>
+
+
+                        <div class="level-dd__panel" role="menu">
+                            <button type="button" class="level-dd__item is-active">LEVEL 1</button>
+                            <button type="button" class="level-dd__item">LEVEL 2</button>
+                            <button type="button" class="level-dd__item">LEVEL 3</button>
+                        </div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.8;">
+                                <span>4/5</span>
+                            </div>
+                            <p>BUBBLES</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.6;">
+                                <span>3/5</span>
+                            </div>
+                            <p>KICKS</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.7;">
+                                <span>3.5/5</span>
+                            </div>
+                            <p>STARFISH</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.8;">
+                                <span>4/5</span>
+                            </div>
+                            <p>FLOATING</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.6;">
+                                <span>3/5</span>
+                            </div>
+                            <p>STREAMLINE</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle skill-circle-jump" style="--value: 0.5;">
+                                <span>2.5/5</span>
+
+                            </div>
+                            <p>JUMP</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="overall-score">
+                        <div class="overall-header">
+                            <span>OVERALL SCORE</span>
+                            <div class="chart-legend">
+                                <span><span class="dot dot-pink"></span>Assesement 1</span>
+                                <span><span class="dot dot-yellow"></span>Assesement 2</span>
+                                <span><span class="dot dot-cyan"></span>Assesement 3</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-wrapper">
+                            <div class="chart-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="chart-y-axis">
+                                <span>25</span>
+                                <span>20</span>
+                                <span>15</span>
+                                <span>10</span>
+                                <span>5</span>
+                                <span>0</span>
+                            </div>
+
+                            <div class="chart-bars">
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:35%;"></span>
+                                        <span class="bar bar-yellow" style="height:55%;"></span>
+                                        <span class="bar bar-cyan" style="height:45%;"></span>
+                                    </div>
+                                    <span class="month-label">May</span>
+                                </div>
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:55%;"></span>
+                                        <span class="bar bar-yellow" style="height:80%;"></span>
+                                        <span class="bar bar-cyan" style="height:100%;"></span>
+                                    </div>
+                                    <span class="month-label">June</span>
+                                </div>
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:8%;"></span>
+                                        <span class="bar bar-yellow" style="height:18%;"></span>
+                                        <span class="bar bar-cyan" style="height:6%;"></span>
+                                    </div>
+                                    <span class="month-label">July</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+         <section class="student-section">
+            <div class="container student-inner">
+
+                <div class="student-left">
+                    <p class="student-name-first">HUSSEIN</p>
+                    <p class="student-name-last">EL DEIK</p>
+
+                    <div class="student-id-pill">ID: 2023001</div>
+
+                    <div class="student-basic-info">
+                        <p>Age: 10 y.o.</p>
+                        <p>Gender: Male</p>
+                        <p>From: Anout</p>
+                    </div>
+
+                    <div class="student-metrics-row">
+                        <div class="student-metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">ATTENDANCE</span>
+                        </div>
+                        <div class="student-metric">
+                            <span class="metric-value">1.5<span class="metric-unit"> m/s</span></span>
+                            <span class="metric-label">SPEED</span>
+                        </div>
+                        <div class="student-metric">
+                            <span class="metric-value">174<span class="metric-unit metric-unit-small"> cm</span></span>
+                            <span class="metric-label">HEIGHT</span>
+                        </div>
+                    </div>
+
+                     <article class="coach-bubble">
+                        <div class="coach-bubble__header">
+                            <span class="coach-bubble__name">Coach Omar Ouaidat</span>
+                            <span class="coach-bubble__date">17/06/2026</span>
+                        </div>
+
+                        <p class="coach-bubble__text">
+                            Worked on breathing patterns during freestyle. Ali needs to focus on bilateral breathing
+                            more consistently. His kick strength is exceptional, one of the best in the class.
+                        </p>
+                    </article>
+
+
+                     <article class="review-card" id="review-2">
+                        <div class="review-card__meta">
+                            <span class="review-card__name">Coach Omar Ouaidat</span>
+                            <span class="review-card__date">05/12/2025</span>
+                        </div>
+                        <p class="review-card__text">
+                            Lamma bdomek 3a sdiri, shou b7ess l denya z8ire, 7ases 7ali mlakt el kon terere w ma fi bel
+                            3alam 8eree.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="student-center">
+                    <img src="images/" alt="" class="swirl-bg">
+                    <img src="images/kid-2.png" alt="Hussein El Deik" class="student-photo">
+                </div>
+
+                <div class="student-right">
+                    <div class="level-dd" id="level-dd-1">
+                        <button class="level-dd__btn" type="button" aria-expanded="false">
+                            <span class="level-dd__text" style="font-size: 25px;">LEVEL 1</span>
+                            <span class="level-dd__chev">&gt;</span>
+                        </button>
+
+
+                        <div class="level-dd__panel" role="menu">
+                            <button type="button" class="level-dd__item is-active">LEVEL 1</button>
+                            <button type="button" class="level-dd__item">LEVEL 2</button>
+                            <button type="button" class="level-dd__item">LEVEL 3</button>
+                        </div>
+                    </div>
+
+
+                    <div class="skills-grid">
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.8;">
+                                <span>4/5</span>
+                            </div>
+                            <p>BUBBLES</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.6;">
+                                <span>3/5</span>
+                            </div>
+                            <p>KICKS</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.7;">
+                                <span>3.5/5</span>
+                            </div>
+                            <p>STARFISH</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.8;">
+                                <span>4/5</span>
+                            </div>
+                            <p>FLOATING</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle" style="--value: 0.6;">
+                                <span>3/5</span>
+                            </div>
+                            <p>STREAMLINE</p>
+                        </div>
+
+                        <div class="skill">
+                             <div class="skill-circle skill-circle-jump" style="--value: 0.5;">
+                                <span>2.5/5</span>
+
+                            </div>
+                            <p>JUMP</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="overall-score">
+                        <div class="overall-header">
+                            <span>OVERALL SCORE</span>
+                            <div class="chart-legend">
+                                <span><span class="dot dot-pink"></span>Assesement 1</span>
+                                <span><span class="dot dot-yellow"></span>Assesement 2</span>
+                                <span><span class="dot dot-cyan"></span>Assesement 3</span>
+                            </div>
+                        </div>
+
+                        <div class="chart-wrapper">
+                            <div class="chart-grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="chart-y-axis">
+                                <span>25</span>
+                                <span>20</span>
+                                <span>15</span>
+                                <span>10</span>
+                                <span>5</span>
+                                <span>0</span>
+                            </div>
+
+
+                            <div class="chart-bars">
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:40%;"></span>
+                                        <span class="bar bar-yellow" style="height:55%;"></span>
+                                        <span class="bar bar-cyan" style="height:45%;"></span>
+                                    </div>
+                                    <span class="month-label">May</span>
+                                </div>
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:65%;"></span>
+                                        <span class="bar bar-yellow" style="height:90%;"></span>
+                                        <span class="bar bar-cyan" style="height:100%;"></span>
+                                    </div>
+                                    <span class="month-label">June</span>
+                                </div>
+                                <div class="chart-column">
+                                    <div class="bar-group">
+                                        <span class="bar bar-pink" style="height:5%;"></span>
+                                        <span class="bar bar-yellow" style="height:10%;"></span>
+                                        <span class="bar bar-cyan" style="height:3%;"></span>
+                                    </div>
+                                    <span class="month-label">July</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+         <section id="quiz-section">
+            <div class="container">
+                <div class="quiz-title-wrap">
+                    <h2><span>TEST YOUR </span>SWIMMING <span>KNOWLEDGE</span></h2>
+                    <p>Take our quick quiz and see how much you know about swimming!</p>
+                </div>
+
+                <div class="quiz-inner">
+
+                    <div class="quiz-left">
+                        <div class="quiz-header">
+                            <span>Question 1 of 5</span>
+                            <span>Score: 0</span>
+                        </div>
+
+                         <div class="quiz-progress-track">
+                            <div class="quiz-progress-fill"></div>
+                        </div>
+
+                        <div class="quiz-question">
+                            What is the most common swimming stroke?
+                        </div>
+
+                        <form class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="Butterfly">
+                                <span>Butterfly</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="Freestyle">
+                                <span>Freestyle</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="Backstroke">
+                                <span>Backstroke</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="Breaststroke">
+                                <span>Breaststroke</span>
+                            </label>
+                        </form>
+
+                        <button type="button" class="quiz-next-btn">Next Question</button>
+                    </div>
+
+
+
+                    <aside class="quiz-right">
+                         <div class="quiz-level-stage-pill">
+
+                            <div class="quiz-level-dd">
+                                <button class="quiz-level-dd__btn" type="button">
+                                    <span class="quiz-level-arrow">&gt;</span>
+                                    <span class="quiz-level-text">Level 1</span>
+                                </button>
+
+                                <div class="quiz-level-dd__menu">
+                                    <div class="quiz-level-dd__item active" data-level="1">Level 1</div>
+                                    <div class="quiz-level-dd__item" data-level="2">Level 2</div>
+                                    <div class="quiz-level-dd__item" data-level="3">Level 3</div>
+                                </div>
+
+                            </div>
+
+                            <span class="quiz-pill-separator">|</span>
+                            <span>Stage: 9</span>
+                        </div>
+
+                         <div class="quiz-name-row">
+                            <div class="quiz-student-pill">
+                                <span class="pill-label">Student name:</span>
+                                <span class="pill-value">Ali Ali El Alawiye</span>
+                            </div>
+
+                            <div class="quiz-left-points">
+                                <div class="quiz-left-points-inner">
+                                    <span class="points-text">327 Pt</span>
+                                    <img class="points-shark" src="images/shark-icon-white.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                         <div class="quiz-main-card">
+                            <div class="quiz-description">
+                                <h4>What is test your knowledge ?</h4>
+                                <p>
+                                    Test your knowledge, earn points, and turn what you learn into rewards! Complete
+                                    quizzes, level up, and use your points to unlock free items from our shop.
+                                </p>
+                            </div>
+
+                            <div class="quiz-level-progress">
+                                 <div class="level-progress-row">
+                                    <div class="level-progress-pill level-open">
+                                        <img src="images/unlock.png" alt="" class="lock-icon">
+                                        <span style="    color: rgba(23, 88, 195, 1);">LEVEL 1</span>
+                                    </div>
+                                    <div class="level-progress-bar">
+                                        <div class="level-progress-fill" style="width: 82%;">
+                                            <span class="level-progress-percent">82%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="level-progress-row">
+                                    <div class="level-progress-pill level-locked">
+                                        <img src="images/lock.png" alt="" class="lock-icon">
+                                        <span>LEVEL 2</span>
+                                    </div>
+                                    <div class="level-progress-bar">
+                                        <div class="level-progress-fill level-progress-fill-locked" style="width: 17%;">
+                                            <span class="level-progress-percent">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="level-progress-row">
+                                    <div class="level-progress-pill level-locked">
+                                        <img src="images/lock.png" alt="" class="lock-icon">
+                                        <span>LEVEL 3</span>
+                                    </div>
+                                    <div class="level-progress-bar">
+                                        <div class="level-progress-fill level-progress-fill-locked" style="width: 17%;">
+                                            <span class="level-progress-percent">0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+
+
+                </div>
+            </div>
+            <div id="quiz-end-screen" class="quiz-end hidden">
+                <img src="imgs/trophy.png" class="quiz-end-icon" alt="trophy">
+
+                <h2 class="quiz-end-title">Quiz Complete!</h2>
+
+                <p class="quiz-end-score">4/5</p>
+
+                <p class="quiz-end-message">Well done! Your swim knowledge is growing.</p>
+
+                <button class="quiz-end-restart">
+                    ↻ Try again
+                </button>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer class="msa-footer">
+        <div class="msa-footer__inner">
+
+            <div class="msa-footer__topline"></div>
+
+            <div class="msa-footer__grid">
+                 <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
+
+                 <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                 <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                 <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    <div class="level-lock-popup" id="level-lock-popup">
+        <div class="level-lock-popup__box">
+            <p>You need to unlock the next levels to access this.</p>
+            <button id="level-lock-close">OK</button>
+        </div>
+    </div>
+
+    <script src="student-profile-quiz.js"></script>
+    <script src="nav.js"></script>
+
+</body>
+
+</html>

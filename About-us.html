@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MSA | About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="About-us.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-signed-out.css">
+
+</head>
+
+<body>
+
+    <style>
+        .msa-footer {
+            width: 100%;
+            background: linear-gradient(180deg, #022978 0%, #022978 100%);
+            color: #ffffff;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+    </style>
+    <header class="top-nav" id="navSignedOut" hidden>
+        <a class="logo" href="index.html" aria-label="MSA Home">
+            <img src="images/msa-logo.png" alt="MSA Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about-us.html" class="active">About us</a>
+            <a href="community.html">Community</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html">Contact us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="signup.html" class="btn-outline">Sign Up</a>
+            <a href="registration.html" class="btn-yellow">Registration</a>
+        </div>
+    </header>
+
+    <header class="msa-nav-signed" id="navSignedIn" hidden>
+        <div class="msa-nav-inner">
+
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html" class="active">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="student-profile.html">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="index.html" id="signOutBtn">
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="about-hero">
+        <div class="about-hero-inner">
+            <h1 class="about-hero-title">
+                DIVE INTO <span class="accent">EXCELLENCE</span>
+            </h1>
+
+            <p class="about-hero-subtitle">
+                Professional swimming training for all ages and skill levels.
+                From beginners to competitive athletes.
+            </p>
+
+            <button class="about-cta">
+                <span class="cta-text">Start Your Journey</span>
+                <span class="cta-arrow">➜</span>
+            </button>
+
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <p class="stat-number">105+</p>
+                    <p class="stat-label">Students Trained</p>
+                </div>
+
+                <div class="stat-card">
+                    <p class="stat-number">4+</p>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+
+                <div class="stat-card">
+                    <p class="stat-number">98%</p>
+                    <p class="stat-label">Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-msa">
+
+        <div class="about-msa-header">
+            <h2 class="about-msa-title">ABOUT <span>MSA</span></h2>
+            <p class="about-msa-subtitle">
+                Leading the way in professional swimming education <br>for over 4 years.
+            </p>
+        </div>
+
+        <div class="about-msa-inner">
+
+            <div class="about-msa-text">
+
+                <p class="about-msa-body">
+                    At Mako Shark Academy, we believe that swimming is more than just a sport.
+                    It’s a life skill, a passion, and a journey towards growth. Our mission is
+                    to provide world-class swimming instruction in a safe, supportive, and
+                    inspiring environment.
+                </p>
+
+                <ul class="about-msa-list">
+                    <li>
+                        <span class="about-msa-icon">
+                            <img src="images/Check.png" alt="check icon">
+                        </span>
+
+                        <div>
+                            <h4>Expert Coaching</h4>
+                            <p>
+                                Our instructors are certified and fond with international training & swimming
+                                experience.
+
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="about-msa-icon">
+                            <img src="images/Check.png" alt="check icon">
+                        </span>
+
+                        <div>
+                            <h4>Modern Facilities</h4>
+                            <p>
+                                State-of-the-art Olympic-size pools with advanced training <br> equipment </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="about-msa-icon">
+                            <img src="images/Check.png" alt="check icon">
+                        </span>
+
+                        <div>
+                            <h4>Personalized Programs</h4>
+                            <p>
+                                Tailored training plans for beginners, intermediate, and <br>advanced swimmers, each
+                                session is individualised to each swimmer needs. </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="about-msa-stats">
+
+                    <div class="about-msa-stat-card">
+                        <div class="about-msa-stat-icon">
+                            <img src="images/medal.png" alt="">
+                        </div>
+                        <p class="about-msa-stat-number">50+</p>
+                        <p class="about-msa-stat-label">Awards</p>
+                    </div>
+
+                    <div class="about-msa-stat-card">
+                        <div class="about-msa-stat-icon">
+                            <img src="images/trophy.png" alt="">
+                        </div>
+                        <p class="about-msa-stat-number">30+</p>
+                        <p class="about-msa-stat-label">Champions</p>
+                    </div>
+
+                    <div class="about-msa-stat-card">
+                        <div class="about-msa-stat-icon">
+                            <img src="images/Coaches.png" alt="">
+                        </div>
+                        <p class="about-msa-stat-number">9+</p>
+                        <p class="about-msa-stat-label">Coaches</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-msa-image-wrapper">
+                <img src="images/about-us-crop.jpg" alt="MSA Team" class="about-msa-image">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="msa-gallery">
+        <h2 class="gallery-title">MSA <span>GALLERY</span></h2>
+        <p class="gallery-subtitle">Our sharks are ready to take you to the depth of the ocean</p>
+
+        <div class="gallery-grid">
+            <img src="images/gal-img-1.png" alt="">
+            <img src="images/gal-img-2.png" alt="">
+            <img src="images/gal-img-3.png" alt="">
+            <img src="images/gal-img-4.png" alt="">
+            <img src="images/gal-img-5.png" alt="">
+            <img src="images/gal-img-6.png" alt="">
+        </div>
+    </section>
+    <section class="msa-team">
+        <h2 class="team-title">MEET THE <span>TEAM</span></h2>
+        <p class="team-subtitle">Our sharks are ready to take you to the depth of the ocean</p>
+        <div class="team-bg-icon">
+            <img src="images/Frame 3855.png" alt="Shark Icon">
+        </div>
+
+        <div class="team-row">
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="images/ali.png" alt="Coach Ahmad Ouaidat">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-role">Coach</div>
+                    <div class="team-name">Ali Jad</div>
+                    <p class="team-desc">
+                        is a committed swimming coach focused on improving technique, confidence, and performance.
+                    </p>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="images/walid.png" alt="Coach Ahmad Ouaidat">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-role">Coach</div>
+                    <div class="team-name">Walid Khaled</div>
+                    <p class="team-desc">
+                        is a committed swimming coach focused on improving technique, confidence, and performance.
+                    </p>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="images/mostafa.png" alt="Coach Ahmad Ouaidat">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-role">Coach</div>
+                    <div class="team-name">Mostafa Ghandour</div>
+                    <p class="team-desc">
+                        is a committed swimming coach focused on improving technique, confidence, and performance.
+                    </p>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="images/omar.png" alt="Coach Ahmad Ouaidat">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-role">Coach</div>
+                    <div class="team-name">Omar Ouaidat</div>
+                    <p class="team-desc">
+                        is a committed swimming coach focused on improving technique, confidence, and performance.
+                    </p>
+                </div>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img src="images/ahmad.png" alt="Coach Ahmad Ouaidat">
+                </div>
+
+                <div class="team-info">
+                    <div class="team-role">Coach</div>
+                    <div class="team-name">Ahmad Ouaidat</div>
+                    <p class="team-desc">
+                        is a committed swimming coach focused on improving technique, confidence, and performance.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="msa-footer">
+        <div class="msa-footer__inner">
+
+            <div class="msa-footer__topline"></div>
+
+            <div class="msa-footer__grid">
+                <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="nav-signed-out.js"></script>
+    <script src="nav-auth-switch.js"></script>
+
+</body>
+
+</html>

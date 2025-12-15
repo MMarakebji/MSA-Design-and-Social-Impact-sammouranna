@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – MSA</title>
+
+
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="Contact-us.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-signed-out.css">
+</head>
+
+<body>
+    <style>
+        .msa-footer {
+            background: transparent;
+            color: #ffffff;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+    </style>
+    <header class="top-nav" id="navSignedOut" hidden>
+        <a class="logo" href="index.html" aria-label="MSA Home">
+            <img src="images/msa-logo.png" alt="MSA Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="community.html">Community</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html" class="active">Contact us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="signup.html" class="btn-outline">Sign Up</a>
+            <a href="registration.html" class="btn-yellow">Registration</a>
+        </div>
+    </header>
+
+    <header class="msa-nav-signed" id="navSignedIn" hidden>
+        <div class="msa-nav-inner">
+
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact-us.html" class="active">Contact us</a>
+                <a href="student-profile.html">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="contact-us.html" id="signOutBtn">
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <section id="contact-us">
+        <div class="contact-overlay">
+            <div class="contact-inner">
+
+                <div class="contact-headings">
+                    <h1>LETS ANSWER <span>YOUR QUERIES</span></h1>
+                    <p class="contact-subtitle">
+                        Our team is all ears when it comes to your inquiries.
+                        <br>Communication is the key to build a good relationship between you and us !
+                    </p>
+
+                </div>
+
+                <form id="contact-form">
+                    <div class="contact-left">
+                        <input type="text" placeholder="FIRST NAME" required>
+                        <input type="text" placeholder="LAST NAME" required>
+                        <input type="email" placeholder="E-MAIL" required>
+                        <input type="tel" placeholder="PHONE NUMBER">
+                    </div>
+
+                    <div class="contact-right">
+                        <textarea placeholder="LEAVE A MESSAGE FOR US" required></textarea>
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <section id="pool-locations">
+        <div class="locations-container">
+
+            <div class="location-box">
+                <h2>DEBIYE Pool Location</h2>
+                <div class="map-frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.1970029754703!2d35.608743375536494!3d33.91831292381702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3d98ec35373f%3A0x27a7b98d198a33cd!2sWaterGate%20Aqua%20Adventure%20Park!5e0!3m2!1sen!2slb!4v1733876677630!5m2!1sen!2slb"
+                        width="100%" height="100%" style="border:0;" loading="lazy" allowfullscreen>
+                    </iframe>
+
+                </div>
+            </div>
+
+            <div class="location-box">
+                <h2>SHEHIM Pool Location</h2>
+                <div class="map-frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.126806040519!2d35.59031877553455!3d33.86887172669979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3d9c6eb24721%3A0x6d83e790242c173b!2sWaves%20Aqua%20Park!5e0!3m2!1sen!2slb!4v1733876559194!5m2!1sen!2slb"
+                        width="100%" height="100%" style="border:0;" loading="lazy" allowfullscreen>
+                    </iframe>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="msa-footer">
+        <div class="msa-footer__inner">
+
+            <div class="msa-footer__topline"></div>
+
+            <div class="msa-footer__grid">
+                <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+    <script src="nav-signed-out.js"></script>
+    <script src="nav-auth-switch.js"></script>
+
+    <script src="nav.js"></script>
+
+</body>
+
+</html>

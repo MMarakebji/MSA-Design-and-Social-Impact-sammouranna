@@ -1,445 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="registration.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="nav-signed-out.css">
 </head>
+
 <body>
-    <section class="hero-section">
+  <style>
+    .msa-footer{
+  width: 100%;
+  background: linear-gradient(180deg, #082457 0%, #082457 100%);
+  color: #ffffff;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+  </style>
+  <header class="top-nav" id="navSignedOut" hidden>
+        <a class="logo" href="index.html" aria-label="MSA Home">
+            <img src="images/msa-logo.png" alt="MSA Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about-us.html"class="active">About us</a>
+            <a href="community.html">Community</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html" >Contact us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="signup.html" class="btn-outline">Sign Up</a>
+            <a href="registration.html" class="btn-yellow">Registration</a>
+        </div>
+    </header>
+
+    <header class="msa-nav-signed"  id="navSignedIn"  hidden>
+        <div class="msa-nav-inner">
+
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html" class="active">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="student-profile.html">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="index.html" id="signOutBtn">
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+  <section class="hero-section">
     <div class="hero-content">
-        <h1 class="hero-title">
-            YOUR SWIM JOURNEY <span>STARTS HERE</span>
-        </h1>
+      <h1 class="hero-title">
+        YOUR SWIM JOURNEY <span>STARTS HERE</span>
+      </h1>
 
-        <p class="hero-subtitle">
-            Join a swimming program tailored for all ages, levels, and goals,<br>
-            designed to help you grow in and out of the water.
-        </p>
+      <p class="hero-subtitle">
+        Join a swimming program tailored for all ages, levels, and goals,<br>
+        designed to help you grow in and out of the water.
+      </p>
 
-        <button class="hero-btn">Register Now ↓</button>
+      <button class="hero-btn">Register Now ↓</button>
     </div>
-</section>
+  </section>
 
-<section class="levels-section">
+  <section class="levels-section">
 
-<div class="levels-header">
-    <h1 class="levels-heading">
+    <div class="levels-header">
+      <h1 class="levels-heading">
         RISE THROUGH <span>THE LEVELS</span>
-    </h1>
+      </h1>
 
-    <p class="levels-description">
+      <p class="levels-description">
         Our training programs consists of 5 levels, starting with<br>
         learning to enter the pool to mastery of all 4 strokes
-    </p>
+      </p>
 
-</div>
+    </div>
     <div class="levels-grid">
 
-        <!-- CARD 1 -->
-        <div class="level-card">
-            <div class="image-box">
-                <img src="Mask group (2).png" class="level-img">
+      <!-- CARD 1 -->
+      <div class="level-card">
+        <div class="image-box">
+          <img src="Mask group (2).png" class="level-img">
 
-                <h2 class="level-name">BABY <span>SHARK</span></h2>
-            </div>
-
-            <div class="static-bottom">
-                <p class="bottom-title">Level 1</p>
-                <div class="bottom-underline"></div>
-            </div>
-
-            <div class="expand-area">
-                <h3>Level 1</h3>
-                <p>
-                    Level 1 takes you through the techniques of both the freestyle 
-                    and backstroke.
-                </p>
-                <button class="expand-btn">Course info →</button>
-            </div>
+          <h2 class="level-name">BABY <span>SHARK</span></h2>
         </div>
 
-
-
-        <!-- CARD 2 -->
-        <div class="level-card">
-            <div class="image-box">
-                <img src="Mask group (1).png" class="level-img">
-
-                <h2 class="level-name">MAKO <span>SHARK</span></h2>
-
-            </div>
-
-            <div class="static-bottom">
-                <p class="bottom-title">Level 2</p>
-                <div class="bottom-underline"></div>
-            </div>
-
-            <div class="expand-area">
-                <h3>Level 2</h3>
-                <p>
-                    Level 2 focuses on improving swimming technique, balance, and endurance.
-                </p>
-                <button class="expand-btn">Course info →</button>
-            </div>
+        <div class="static-bottom">
+          <p class="bottom-title">Level 1</p>
+          <div class="bottom-underline"></div>
         </div>
 
-
-
-        <!-- CARD 3 -->
-        <div class="level-card">
-            <div class="image-box">
-                <img src="Mask group.png" class="level-img">
-
-                <h2 class="level-name">HAMMER <span>HEAD</span></h2>
-
-                
-            </div>
-
-            <div class="static-bottom">
-                <p class="bottom-title">Level 3</p>
-                <div class="bottom-underline"></div>
-            </div>
-
-            <div class="expand-area">
-                <h3>Level 3</h3>
-                <p>
-                    Level 3 transitions into advanced stroke development and underwater skills.
-                </p>
-                <button class="expand-btn">Course info →</button>
-            </div>
+        <div class="expand-area">
+          <h3>Level 1</h3>
+          <p>
+            Level 1 takes you through the techniques of both the freestyle
+            and backstroke.
+          </p>
+          <button class="expand-btn">Course info →</button>
         </div>
+      </div>
+
+
+
+      <!-- CARD 2 -->
+      <div class="level-card">
+        <div class="image-box">
+          <img src="Mask group (1).png" class="level-img">
+
+          <h2 class="level-name">MAKO <span>SHARK</span></h2>
+
+        </div>
+
+        <div class="static-bottom">
+          <p class="bottom-title">Level 2</p>
+          <div class="bottom-underline"></div>
+        </div>
+
+        <div class="expand-area">
+          <h3>Level 2</h3>
+          <p>
+            Level 2 focuses on improving swimming technique, balance, and endurance.
+          </p>
+          <button class="expand-btn">Course info →</button>
+        </div>
+      </div>
+
+
+
+      <!-- CARD 3 -->
+      <div class="level-card">
+        <div class="image-box">
+          <img src="Mask group.png" class="level-img">
+
+          <h2 class="level-name">HAMMER <span>HEAD</span></h2>
+
+
+        </div>
+
+        <div class="static-bottom">
+          <p class="bottom-title">Level 3</p>
+          <div class="bottom-underline"></div>
+        </div>
+
+        <div class="expand-area">
+          <h3>Level 3</h3>
+          <p>
+            Level 3 transitions into advanced stroke development and underwater skills.
+          </p>
+          <button class="expand-btn">Course info →</button>
+        </div>
+      </div>
 
     </div>
 
 
-     
+
     <section class="academy-section">
 
-  <!-- MAIN TITLE -->
-  <h1 class="academy-title">
-    ACADEMY <span>SCHEDULE & UPDATES</span>
-  </h1>
-  <p class="academy-subtitle">
-    Complete class schedules, announcements, and term calendar
-  </p>
+      <!-- MAIN TITLE -->
+      <h1 class="academy-title">
+        ACADEMY <span>SCHEDULE & UPDATES</span>
+      </h1>
+      <p class="academy-subtitle">
+        Complete class schedules, announcements, and term calendar
+      </p>
 
-  <div class="academy-grid">
+      <div class="academy-grid">
 
-    <!-- LEFT SIDE -->
-    <div class="left-side">
+        <!-- LEFT SIDE -->
+        <div class="left-side">
 
-      <!-- SEARCH & FILTER BOX -->
-      <div class="filter-box">
-        <div class="filter-title">
-          <img src="Vector (7).png" class="icon-sm" alt="">
-          Search & Filter Classes
-        </div>
+          <!-- SEARCH & FILTER BOX -->
+          <div class="filter-box">
+            <div class="filter-title">
+              <img src="Vector (7).png" class="icon-sm" alt="">
+              Search & Filter Classes
+            </div>
 
-        <div class="filter-row">
+            <div class="filter-row">
 
-          <!-- search with icon like screenshot -->
-          <div class="search-field">
-            <img src="Vector (9).png" class="icon-xs" alt="">
-            <input type="text" class="filter-input" placeholder="Search by class or coach name...">
+              <!-- search with icon like screenshot -->
+              <div class="search-field">
+                <img src="Vector (9).png" class="icon-xs" alt="">
+                <input type="text" class="filter-input" placeholder="Search by class or coach name...">
+              </div>
+
+              <select class="filter-select">
+                <option>All Levels</option>
+              </select>
+
+              <select class="filter-select">
+                <option>All Coaches</option>
+              </select>
+
+              <select class="filter-select">
+                <option>All Hours</option>
+              </select>
+            </div>
           </div>
 
-          <select class="filter-select">
-            <option>All Levels</option>
-          </select>
+          <!-- CLASS SCHEDULE -->
+          <div class="schedule-box">
+            <div class="box-title">
+              <img src="Vector (5).png" class="icon-sm" alt="">
+              Class Schedule
+            </div>
 
-          <select class="filter-select">
-            <option>All Coaches</option>
-          </select>
+            <div class="cards-grid">
 
-          <select class="filter-select">
-            <option>All Hours</option>
-          </select>
+              <!-- CARD 1 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag beginner">Beginner</span>
+                  <span class="spots green">
+                    <img src="Group 134.png" class="icon-xxs" alt=""> 4 Spots Open
+                  </span>
+                </div>
+
+                <h3>Beginner Basics</h3>
+
+                <p class="class-line">
+                  <img src="Vector (2).png" class="icon-xxs" alt="">
+                  9:00 AM → 10:00 AM (60 min)
+                </p>
+                <p class="class-line">
+                  <img src="Vector (3).png" class="icon-xxs" alt="">
+                  Coach Raghad Mrad
+                </p>
+                <p class="class-line">
+                  <img src="Group 22 (1).png" class="icon-xxs" alt="">
+                  1 / 5 Student Registered
+                </p>
+                <p class="class-line">
+                  <img src="Vector (4).png" class="icon-xxs" alt="">
+                  Line 1
+                </p>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag beginner">Beginner</span>
+                  <span class="spots green">
+                    <img src="Group 134.png" class="icon-xxs" alt=""> 1 Spots Open
+                  </span>
+                </div>
+
+                <h3>Beginner Basics</h3>
+
+                <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">10:00 AM → 11:00 AM (60 min)</p>
+                <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Ahmad Ouaiadat</p>
+                <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">4 / 5 Student Registered</p>
+                <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 1</p>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag beginner">Beginner</span>
+                  <span class="spots red">
+                    <img src="Vector (8).png" class="icon-xxs" alt=""> Full
+                  </span>
+                </div>
+
+                <h3>Beginner Basics</h3>
+
+                <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">11:00 AM → 12:00 AM (60 min)</p>
+                <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Hsein El Deek</p>
+                <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">5 / 5 Student Registered</p>
+                <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 1</p>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag intermediate">Intermediate</span>
+                  <span class="spots green">
+                    <img src="Group 134.png" class="icon-xxs" alt=""> 5 Spots Open
+                  </span>
+                </div>
+
+                <h3>Intermediate Technique</h3>
+
+                <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">9:00 AM → 10:00 AM (60 min)</p>
+                <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Omar Ouaiadat</p>
+                <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">0 / 5 Student Registered</p>
+                <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
+              </div>
+
+              <!-- CARD 5 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag intermediate">Intermediate</span>
+                  <span class="spots green">
+                    <img src="Group 134.png" class="icon-xxs" alt=""> 2 Spots Open
+                  </span>
+                </div>
+
+                <h3>Beginner Basics</h3>
+
+                <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">10:00 AM → 11:00 AM (60 min)</p>
+                <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Omar Ouaiadat</p>
+                <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">3 / 5 Student Registered</p>
+                <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="class-card">
+                <div class="card-top">
+                  <span class="tag intermediate">Intermediate</span>
+                  <span class="spots red">
+                    <img src="Vector (8).png" class="icon-xxs" alt=""> Full
+                  </span>
+                </div>
+
+                <h3>Beginner Basics</h3>
+
+                <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">11:00 AM → 12:00 AM (60 min)</p>
+                <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Ahmad Ouaiadat</p>
+                <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">5 / 5 Student Registered</p>
+                <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
+              </div>
+
+            </div>
+
+            <div class="see-more">See More ↓</div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-side">
+
+          <!-- CALENDAR -->
+          <div class="calendar-box">
+            <div class="calendar-head">
+              <div class="box-title">
+                <img src="Vector (10).png" class="icon-sm" alt="">
+                Calendar View
+              </div>
+              <div class="calendar-month">October, 2025 <span class="caret">▾</span></div>
+            </div>
+
+            <div class="calendar-grid">
+              <span class="day">Mo</span><span class="day">Tu</span><span class="day">We</span><span
+                class="day">Th</span><span class="day">Fr</span><span class="day">Sa</span><span class="day">Su</span>
+
+              <span class="date active">1</span>
+              <span class="date">2</span><span class="date">3</span><span class="date">4</span><span
+                class="date">5</span><span class="date">6</span><span class="date">7</span>
+              <span class="date">8</span><span class="date">9</span><span class="date">10</span><span
+                class="date">11</span><span class="date">12</span><span class="date">13</span><span
+                class="date">14</span>
+              <span class="date">15</span><span class="date">16</span><span class="date">17</span><span
+                class="date">18</span><span class="date">19</span><span class="date">20</span><span
+                class="date">21</span>
+              <span class="date">22</span><span class="date">23</span><span class="date">24</span><span
+                class="date">25</span><span class="date">26</span><span class="date">27</span><span
+                class="date">28</span>
+              <span class="date">29</span><span class="date">30</span><span class="date">31</span>
+            </div>
+          </div>
+
+          <!-- TERM TIMELINE -->
+          <div class="timeline-box">
+            <div class="box-title">
+              <img src="Vector (2).png" class="icon-sm" alt="">
+              Term Timeline
+            </div>
+
+            <ul class="timeline-list">
+              <li>
+                <span class="ticon green"><img src="Group 752.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Fall Term Start</b>
+                  <p>January 15, 2025</p>
+                </div>
+              </li>
+
+              <li>
+                <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Mid-Term Checkpoint</b>
+                  <p>February 17 – February 21, 2025</p>
+                </div>
+              </li>
+
+              <li>
+                <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Practical Workshops</b>
+                  <p>March 1, 2025</p>
+                </div>
+              </li>
+
+              <li>
+                <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Mock Competition Week</b>
+                  <p>March 24, 2025</p>
+                </div>
+              </li>
+
+              <li>
+                <span class="ticon green"><img src="Group 752.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Fall Term End</b>
+                  <p>March 30, 2025</p>
+                </div>
+              </li>
+
+              <li>
+                <span class="ticon gray"><img src="Group 753.png" class="icon-xxs" alt=""></span>
+                <div class="ttext">
+                  <b>Spring Term Start</b>
+                  <p>April 5, 2025</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
 
-      <!-- CLASS SCHEDULE -->
-      <div class="schedule-box">
-        <div class="box-title">
-          <img src="Vector (5).png" class="icon-sm" alt="">
-          Class Schedule
-        </div>
+    </section>
 
-        <div class="cards-grid">
 
-          <!-- CARD 1 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag beginner">Beginner</span>
-              <span class="spots green">
-                <img src="Group 134.png" class="icon-xxs" alt=""> 4 Spots Open
-              </span>
+
+
+
+    <section class="register-section" id="register">
+      <div class="register-wrap">
+        <h1 class="register-title">REGISTER <span>FOR CLASSES</span></h1>
+        <p class="register-subtitle">Start your swimming journey today with our expert instructors</p>
+
+        <form class="register-card">
+          <div class="register-grid">
+            <div class="field">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" type="text" placeholder="Enter your full name" />
             </div>
 
-            <h3>Beginner Basics</h3>
-
-            <p class="class-line">
-              <img src="Vector (2).png" class="icon-xxs" alt="">
-              9:00 AM → 10:00 AM (60 min)
-            </p>
-            <p class="class-line">
-              <img src="Vector (3).png" class="icon-xxs" alt="">
-              Coach Raghad Mrad
-            </p>
-            <p class="class-line">
-              <img src="Group 22 (1).png" class="icon-xxs" alt="">
-              1 / 5 Student Registered
-            </p>
-            <p class="class-line">
-              <img src="Vector (4).png" class="icon-xxs" alt="">
-              Line 1
-            </p>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag beginner">Beginner</span>
-              <span class="spots green">
-                <img src="Group 134.png" class="icon-xxs" alt=""> 1 Spots Open
-              </span>
+            <div class="field">
+              <label for="age">Student Age</label>
+              <input id="age" type="text" placeholder="Enter age" />
             </div>
 
-            <h3>Beginner Basics</h3>
-
-            <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">10:00 AM → 11:00 AM (60 min)</p>
-            <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Ahmad Ouaiadat</p>
-            <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">4 / 5 Student Registered</p>
-            <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 1</p>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag beginner">Beginner</span>
-              <span class="spots red">
-                <img src="Vector (8).png" class="icon-xxs" alt=""> Full
-              </span>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placeholder="example@gmail.com" />
             </div>
 
-            <h3>Beginner Basics</h3>
-
-            <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">11:00 AM → 12:00 AM (60 min)</p>
-            <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Hsein El Deek</p>
-            <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">5 / 5 Student Registered</p>
-            <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 1</p>
-          </div>
-
-          <!-- CARD 4 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag intermediate">Intermediate</span>
-              <span class="spots green">
-                <img src="Group 134.png" class="icon-xxs" alt=""> 5 Spots Open
-              </span>
+            <div class="field">
+              <label for="level">Class Level</label>
+              <select id="level">
+                <option selected disabled>Select class level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
             </div>
 
-            <h3>Intermediate Technique</h3>
-
-            <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">9:00 AM → 10:00 AM (60 min)</p>
-            <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Omar Ouaiadat</p>
-            <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">0 / 5 Student Registered</p>
-            <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
-          </div>
-
-          <!-- CARD 5 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag intermediate">Intermediate</span>
-              <span class="spots green">
-                <img src="Group 134.png" class="icon-xxs" alt=""> 2 Spots Open
-              </span>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" placeholder="+961 01 234 567" />
             </div>
 
-            <h3>Beginner Basics</h3>
-
-            <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">10:00 AM → 11:00 AM (60 min)</p>
-            <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Omar Ouaiadat</p>
-            <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">3 / 5 Student Registered</p>
-            <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
-          </div>
-
-          <!-- CARD 6 -->
-          <div class="class-card">
-            <div class="card-top">
-              <span class="tag intermediate">Intermediate</span>
-              <span class="spots red">
-                <img src="Vector (8).png" class="icon-xxs" alt=""> Full
+            <div class="field with-icon">
+              <label for="date">Prefered Strart Date</label>
+              <span class="date-icon" aria-hidden="true">
+                <!-- small clock icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="8.2" stroke="rgba(255,255,255,.75)" stroke-width="1.6" />
+                  <path d="M12 7.7v4.8l3 1.6" stroke="rgba(255,255,255,.75)" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
               </span>
+              <input id="date" class="date-input" type="text" placeholder="Pick a date" />
             </div>
-
-            <h3>Beginner Basics</h3>
-
-            <p class="class-line"><img src="Vector (2).png" class="icon-xxs" alt="">11:00 AM → 12:00 AM (60 min)</p>
-            <p class="class-line"><img src="Vector (3).png" class="icon-xxs" alt="">Coach Ahmad Ouaiadat</p>
-            <p class="class-line"><img src="Group 22 (1).png" class="icon-xxs" alt="">5 / 5 Student Registered</p>
-            <p class="class-line"><img src="Vector (4).png" class="icon-xxs" alt="">Line 2</p>
           </div>
 
-        </div>
-
-        <div class="see-more">See More ↓</div>
+          <button class="register-btn" type="button">Complete Registration</button>
+        </form>
       </div>
-    </div>
+    </section>
 
-    <!-- RIGHT SIDE -->
-    <div class="right-side">
+  </section>
 
-      <!-- CALENDAR -->
-      <div class="calendar-box">
-        <div class="calendar-head">
-          <div class="box-title">
-            <img src="Vector (10).png" class="icon-sm" alt="">
-            Calendar View
-          </div>
-          <div class="calendar-month">October, 2025 <span class="caret">▾</span></div>
-        </div>
+      <footer class="msa-footer">
+        <div class="msa-footer__inner">
 
-        <div class="calendar-grid">
-          <span class="day">Mo</span><span class="day">Tu</span><span class="day">We</span><span class="day">Th</span><span class="day">Fr</span><span class="day">Sa</span><span class="day">Su</span>
+            <div class="msa-footer__topline"></div>
 
-          <span class="date active">1</span>
-          <span class="date">2</span><span class="date">3</span><span class="date">4</span><span class="date">5</span><span class="date">6</span><span class="date">7</span>
-          <span class="date">8</span><span class="date">9</span><span class="date">10</span><span class="date">11</span><span class="date">12</span><span class="date">13</span><span class="date">14</span>
-          <span class="date">15</span><span class="date">16</span><span class="date">17</span><span class="date">18</span><span class="date">19</span><span class="date">20</span><span class="date">21</span>
-          <span class="date">22</span><span class="date">23</span><span class="date">24</span><span class="date">25</span><span class="date">26</span><span class="date">27</span><span class="date">28</span>
-          <span class="date">29</span><span class="date">30</span><span class="date">31</span>
-        </div>
-      </div>
+            <div class="msa-footer__grid">
+                <!-- Logo -->
+                <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
 
-      <!-- TERM TIMELINE -->
-      <div class="timeline-box">
-        <div class="box-title">
-          <img src="Vector (2).png" class="icon-sm" alt="">
-          Term Timeline
-        </div>
+                <!-- SHEHIM -->
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
 
-        <ul class="timeline-list">
-          <li>
-            <span class="ticon green"><img src="Group 752.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Fall Term Start</b>
-              <p>January 15, 2025</p>
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <!-- DEBIYE -->
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <!-- About + Social -->
+                <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </li>
 
-          <li>
-            <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Mid-Term Checkpoint</b>
-              <p>February 17 – February 21, 2025</p>
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
             </div>
-          </li>
 
-          <li>
-            <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Practical Workshops</b>
-              <p>March 1, 2025</p>
-            </div>
-          </li>
-
-          <li>
-            <span class="ticon blue"><img src="Group 732.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Mock Competition Week</b>
-              <p>March 24, 2025</p>
-            </div>
-          </li>
-
-          <li>
-            <span class="ticon green"><img src="Group 752.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Fall Term End</b>
-              <p>March 30, 2025</p>
-            </div>
-          </li>
-
-          <li>
-            <span class="ticon gray"><img src="Group 753.png" class="icon-xxs" alt=""></span>
-            <div class="ttext">
-              <b>Spring Term Start</b>
-              <p>April 5, 2025</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-
-
-
-
-<section class="register-section" id="register">
-  <div class="register-wrap">
-    <h1 class="register-title">REGISTER <span>FOR CLASSES</span></h1>
-    <p class="register-subtitle">Start your swimming journey today with our expert instructors</p>
-
-    <form class="register-card">
-      <div class="register-grid">
-        <div class="field">
-          <label for="fullName">Full Name</label>
-          <input id="fullName" type="text" placeholder="Enter your full name" />
         </div>
+    </footer>
 
-        <div class="field">
-          <label for="age">Student Age</label>
-          <input id="age" type="text" placeholder="Enter age" />
-        </div>
-
-        <div class="field">
-          <label for="email">Email Address</label>
-          <input id="email" type="email" placeholder="example@gmail.com" />
-        </div>
-
-        <div class="field">
-          <label for="level">Class Level</label>
-          <select id="level">
-            <option selected disabled>Select class level</option>
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="phone">Phone number</label>
-          <input id="phone" type="tel" placeholder="+961 01 234 567" />
-        </div>
-
-        <div class="field with-icon">
-          <label for="date">Prefered Strart Date</label>
-          <span class="date-icon" aria-hidden="true">
-            <!-- small clock icon -->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="8.2" stroke="rgba(255,255,255,.75)" stroke-width="1.6"/>
-              <path d="M12 7.7v4.8l3 1.6" stroke="rgba(255,255,255,.75)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-          <input id="date" class="date-input" type="text" placeholder="Pick a date" />
-        </div>
-      </div>
-
-      <button class="register-btn" type="button">Complete Registration</button>
-    </form>
-  </div>
-</section>
-
-</section>
-
-<script src="registration.js"></script>
+  <script src="registration.js"></script>
+      <script src="nav.js"></script>
+        <script src="nav-signed-out.js"></script>
+    <script src="nav-auth-switch.js"></script>
 
 </body>
+
 </html>
-
-

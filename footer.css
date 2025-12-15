@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* .montserrat <uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Qonquer Sans";
+  src: url("fonts/Qonquer.otf") format("truetype");
+  font-weight: 1000;
+  
+}
+
+@font-face {
+  font-family: "Qonquer Sans";
+  src: url("fonts/Qonquer.otf") format("truetype");
+  font-weight: 400;
+  
+}
+
+.msa-footer{
+  width: 100%;
+  background: linear-gradient(180deg, #001242 0%, #001235 100%);
+  color: #ffffff;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+
+.msa-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 40px 16px;
+  position: relative;
+}
+
+.msa-footer__topline {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  margin-bottom: 18px;
+}
+
+.msa-footer__grid {
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr 1.15fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.msa-footer__logo {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.msa-footer__title {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.msa-footer__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 13px;
+  line-height: 1.35;
+  opacity: 0.95;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.msa-footer__icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex: 0 0 16px;
+}
+
+.msa-footer__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.msa-footer__item a:hover {
+  text-decoration: underline;
+}
+
+.msa-footer__map {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.msa-footer__about {
+  padding-top: 2px;
+}
+
+.msa-footer__desc {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.35;
+  opacity: 0.95;
+}
+
+.msa-footer__followLabel {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.msa-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.msa-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.msa-footer__social img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.95;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.msa-footer__social a:hover img {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.msa-footer__divider {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  margin-top: 18px;
+}
+
+.msa-footer__bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.9;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+@media (max-width: 980px) {
+  .msa-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .msa-footer__brand {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .msa-footer__inner {
+    padding: 18px 18px 14px;
+  }
+
+  .msa-footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .msa-footer__brand {
+    justify-content: center;
+  }
+}

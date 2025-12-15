@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* .montserrat <uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+@font-face {
+    font-family: "Qonquer Sans";
+    src: url("fonts/Qonquer.otf") format("truetype");
+    font-weight: 1000;
+
+}
+
+@font-face {
+    font-family: "Qonquer Sans";
+    src: url("fonts/Qonquer.otf") format("truetype");
+    font-weight: 400;
+
+}
+.top-nav{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  width: calc(100% - 100px);
+  max-width: 1300px;
+  padding: 14px 50px;
+
+  background: transparent;
+  backdrop-filter: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.logo img{
+  height: 60px;
+  display: block;
+}
+
+.desktop-nav{
+  display: flex;
+  gap: 28px;
+  margin-right: 280px; 
+}
+
+.desktop-nav a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.desktop-nav a:hover{
+  opacity: 1;
+}
+
+.desktop-nav a.active{
+  color: #ffd600;
+  font-weight: 700;
+}
+
+.nav-actions{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.btn-outline,
+.btn-yellow {
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn-yellow {
+  border: 1px solid #ffd600;
+  color: #ffd600;
+  font-weight: 600;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: right 0.3s ease;
+}
+
+.mobile-nav a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.mobile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .desktop-nav,
+  .nav-actions {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .mobile-nav.open {
+    right: 0;
+  }
+}
+
+

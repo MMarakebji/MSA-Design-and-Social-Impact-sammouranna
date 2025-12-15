@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* .montserrat <uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
 @font-face {
   font-family: "Qonquer Sans";
   src: url("fonts/Qonquer.otf") format("truetype");
@@ -5,8 +12,7 @@
   
 }
 
-/* Quarter-circle floating path */
-@keyframes arcMove {
+ @keyframes arcMove {
   0%   { transform: translate(0, 0) rotate(var(--angle)); }
   25%  { transform: translate(12px, -10px) rotate(var(--angle)); }
   50%  { transform: translate(0, -18px) rotate(var(--angle)); }
@@ -46,8 +52,7 @@ body {
 
 }
 
-/* NAVBAR */
-.top-nav {
+ .top-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -64,7 +69,7 @@ body {
   letter-spacing: 2px;
 }
 .logo img {
-  height: 60px;   /* adjust based on your design */
+  height: 60px;    
   width: auto;
   display: block;
 }
@@ -130,8 +135,7 @@ body {
 }
 
 
-/* BURGER BUTTON (hidden on desktop) */
-.burger {
+ .burger {
   display: none;
   flex-direction: column;
   gap: 5px;
@@ -149,8 +153,7 @@ body {
   transition: 0.3s;
 }
 
-/* MOBILE NAV MENU (hidden by default) */
-.mobile-nav {
+ .mobile-nav {
   position: fixed;
   top: 0;
   right: -260px;
@@ -177,8 +180,7 @@ body {
   right: 0;
 }
 
-/* ANIMATION: Burger to X */
-.burger.open span:nth-child(1) {
+ .burger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
@@ -191,8 +193,7 @@ body {
 }
 
 
-/* HERO SLIDER */
-.hero-slider {
+ .hero-slider {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -206,12 +207,11 @@ body {
   bottom: 0;
   height: 180px;
 
-  /* Smooth fade from hero to about section */
-  background: linear-gradient(
+   background: linear-gradient(
     to bottom,
-    rgba(2, 8, 40, 0) 0%,        /* fully transparent */
-    rgba(2, 8, 40, 0.75) 45%,    /* start blending */
-    #03225b 100%                 /* deep blue of ABOUT section */
+    rgba(2, 8, 40, 0) 0%,        
+    rgba(2, 8, 40, 0.75) 45%,   
+    #03225b 100%                  
   );
 
   z-index: 5;
@@ -219,7 +219,7 @@ body {
 }
 
 
-/* Each slide */
+ 
 .slide {
   position: absolute;
   inset: 0;
@@ -234,8 +234,7 @@ body {
   display: block;
 }
 
-/* blue overlay */
-.slide .overlay {
+ .slide .overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -245,12 +244,11 @@ body {
   );
 }
 
-/* content layout */
-.hero-content {
+ .hero-content {
   position: relative;
   z-index: 10;
   height: 100%;
-  padding: 140px 80px 60px;
+  padding: 95px 80px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -275,7 +273,7 @@ body {
   font-weight: 800;
   line-height: 0.9;
   color: #ffd600;
-  margin-bottom: 24px;
+
   font-family: "Qonquer Sans", sans-serif;
   font-weight: 400;
   line-height: 0.9;
@@ -287,6 +285,8 @@ body {
   max-width: 420px;
   color: #d4ddff;
   margin-bottom: 28px;
+    font-family: "Montserrat", sans-serif;
+  
 }
 
 .hero-buttons {
@@ -294,8 +294,7 @@ body {
   gap: 14px;
 }
 
-/* top line */
-.steps-header {
+ .steps-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -303,8 +302,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* right side steps */
-.hero-steps {
+ .hero-steps {
   text-align: right;
   color: #ffffff;
 }
@@ -333,22 +331,21 @@ body {
 
   display: flex;
   align-items: center;
-  gap: 8px;        /* space between text / number / icon */
+  gap: 8px;         
 }
 
 .step-label {
   font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
-  max-width: 0;        /* hidden by default */
+  max-width: 0;    
   overflow: hidden;
   opacity: 0;
   transform: translateX(8px);
   transition: all 0.25s ease;
 }
 
-/* the number (01, 02...) */
-.step-number {
+ .step-number {
   font-size: 18px;
 }
 
@@ -356,8 +353,7 @@ body {
   padding-left: 5px;
 }
 
-/* shark icon base (hidden, slightly lower) */
-.steps-icon {
+ .steps-icon {
   width: 22px;
   height: 22px;
   object-fit: contain;
@@ -367,8 +363,7 @@ body {
   transition: opacity 0.25s ease;
 }
 
-/* yellow line on the left of the number (optional – keep if you like it) */
-.step::before {
+ .step::before {
   content: "";
   position: absolute;
   right: 40px;
@@ -383,11 +378,7 @@ body {
   color: #ffffff;
 }
 
-/* .step.active::before {
-  background: #ffd600;
-} */
-
-/* bottom small text */
+ 
 .scroll-text {
   position: absolute;
   bottom: 24px;
@@ -398,8 +389,7 @@ body {
    z-index: 9999;
 }
 
-/* show "Registration" + shark only on the active row */
-.step.active .step-label {
+ .step.active .step-label {
   max-width: 200px;
   opacity: 1;
   transform: translateX(0);
@@ -410,8 +400,7 @@ body {
   transform: translateX(0);
 }
 
-/* Shark floating up animation */
-@keyframes sharkFloatUp {
+ @keyframes sharkFloatUp {
   0% {
     transform: translateY(10px);
   }
@@ -424,14 +413,12 @@ body {
 }
 
 
-/* When the slide + step are active → make that shark float up */
-.hero-slider .slide.active .step.active .steps-icon {
+ .hero-slider .slide.active .step.active .steps-icon {
   animation: sharkFloatUp 0.6s ease-out;
 }
 
 
-/* ABOUT SECTION */
-.about-section {
+ .about-section {
   background: linear-gradient(to bottom, #03225b, #032e8a);
   color: #fff;
   padding: 10px 20px 0;
@@ -453,7 +440,7 @@ body {
 }
 
 .about-heading span {
-  color: #ffd600; /* yellow "US" */
+  color: #ffd600;  
   font-family: "Qonquer Sans", sans-serif;
   font-weight: 400;
   line-height: 0.9;
@@ -466,8 +453,7 @@ body {
   
 }
 
-/* bottom yellow strip */
-.keyword-strip-wrapper {
+ .keyword-strip-wrapper {
   margin-top: 40px;
   border-top: 4px solid #ffd600;
   border-bottom: 4px solid #ffd600;
@@ -496,11 +482,10 @@ body {
 }
 
 .keyword-strip span:nth-child(2n) {
-  color: #ffd600; /* yellow for GROW, INSPIRE, ... */
+  color: #ffd600;  
 }
 
-/* RESULTS SECTION */
-.results-section {
+ .results-section {
   padding: 90px 40px;
   background: linear-gradient(to bottom, #032e8a, #043da8);
   color: #fff;
@@ -520,8 +505,7 @@ body {
   gap: 60px;
 }
 
-/* LEFT SIDE */
-.results-left {
+ .results-left {
   max-width: 500px;
 }
 
@@ -537,7 +521,7 @@ body {
 }
 
 .results-title span {
-  color: #ffd600; /* yellow REAL */
+  color: #ffd600;  
   font-family: "Qonquer Sans", sans-serif;
   font-weight: 400;
   line-height: 0.9;
@@ -547,10 +531,10 @@ body {
   color: #d7e3ff;
   font-size: 15px;
   line-height: 1.7;
+    font-family: "Montserrat", sans-serif;
 }
 
-/* RIGHT SIDE */
-.results-right {
+ .results-right {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -573,6 +557,7 @@ body {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 6px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .result-link {
@@ -587,18 +572,15 @@ body {
   overflow: visible;
 }
 
-/* TEXT */
-.result-link .text {
+ .result-link .text {
   transition: 0.3s ease;
 }
 
-/* RIGHT ARROW */
-.result-link .arrow {
+ .result-link .arrow {
   transition: 0.3s ease;
 }
 
-/* LEFT ARROW (hidden by default) */
-.result-link::before {
+ .result-link::before {
   content: "→";
   position: absolute;
 
@@ -608,8 +590,7 @@ body {
   color: #ffd600;
 }
 
-/* HOVER EFFECTS */
-.result-link:hover::before {
+ .result-link:hover::before {
   opacity: 1;
   transform: translateX(0);
 }
@@ -619,35 +600,30 @@ body {
   transform: translateX(6px);
 }
 
-/* TEXT SLIDES TO THE RIGHT ON HOVER */
-.result-link:hover .text {
+ .result-link:hover .text {
   transform: translateX(20px);
 }
 
 
-/* start hidden */
-.results-left,
+ .results-left,
 .results-right .result-item {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-/* when section comes into view */
-.results-section.in-view {
+ .results-section.in-view {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* left text appears first */
-.results-section.in-view .results-left {
+ .results-section.in-view .results-left {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.1s;
 }
 
-/* stagger the cards on the right */
-.results-section.in-view .results-right .result-item:nth-child(1) {
+ .results-section.in-view .results-right .result-item:nth-child(1) {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -669,8 +645,7 @@ body {
 
 
 
-/* FUN SECTION */
-.fun-section {
+ .fun-section {
   position: relative;
   padding: 10px 20px 30px;
   background: linear-gradient(to bottom, #043da8, #0450c5);
@@ -684,11 +659,11 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto 80px;
-  height: 260px; /* arc height */
+  height: 260px;  
   pointer-events: none;
 }
 
-/* Base style for images */
+ 
 .fun-img {
   position: absolute;
   width: 180px;
@@ -699,8 +674,7 @@ body {
   transition: 0.3s ease;
 }
 
-/* Position images along a half circle */
-.fun-img:nth-child(1) {
+ .fun-img:nth-child(1) {
   left: -3%;
   top: 130px;
   transform: rotate(-22deg);
@@ -737,16 +711,14 @@ body {
 }
 
 
-/* individual rotations / positions to mimic arc */
-.fun-img-1 { transform: translateY(60px)  rotate(-18deg); }
+ .fun-img-1 { transform: translateY(60px)  rotate(-18deg); }
 .fun-img-2 { transform: translateY(10px) rotate(-8deg); }
 .fun-img-3 { transform: translateY(-10px) rotate(-2deg); }
 .fun-img-4 { transform: translateY(-10px) rotate(4deg); }
 .fun-img-5 { transform: translateY(10px) rotate(12deg); }
 .fun-img-6 { transform: translateY(40px) rotate(20deg); }
 
-/* center text */
-.fun-content {
+ .fun-content {
   max-width: 720px;
   margin: 0 auto;
 }
@@ -772,10 +744,22 @@ body {
   font-size: 15px;
   color: #e0e8ff;
   margin-bottom: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+.hero-buttons a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.fun-btn{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* button */
-.fun-btn {
+ .fun-btn {
   padding: 12px 34px;
   border-radius: 10px;
   border: none;
@@ -1335,7 +1319,7 @@ justify-content: center;
   .hero-content {
     flex-direction: column;
     align-items: flex-start;
-    padding: 120px 24px 40px;
+      padding: 85px 24px 40px;
   }
 
   .hero-steps {
@@ -1517,20 +1501,18 @@ justify-content: center;
 
 /* ✅ make it look like ONE connected box */
 .coach-card:hover .coach-info{
-  border-radius: 0 0 12px 12px;   /* bottom only, because top is now the extension */
+  border-radius: 0 0 12px 12px;   
 }
 
-/* ✅ move photo + info box up together (button stays where it is) */
-.coach-card:hover img,
+ .coach-card:hover img,
 .coach-card:hover .coach-info{
   transform: translateY(-12px) scale(1.05);
 }
 .coach-card:hover .coach-info{
-  transform: translateY(-12px);   /* keep info not scaled */
+  transform: translateY(-12px);    
 }
 
-/* optional: brighten image on hover (you already had this) */
-.coach-card:hover img{
+ .coach-card:hover img{
   filter: brightness(1);
 }
 

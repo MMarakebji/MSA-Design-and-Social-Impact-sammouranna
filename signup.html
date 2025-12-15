@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSA | Create Account</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+  <main class="auth">
+    <section class="auth-left">
+      <a class="auth-back" href="index.html" aria-label="Go back">&#8592;</a>
+
+      <div class="auth-center">
+        <img class="auth-logo" src="images/msa-logo.png" alt="MSA" />
+
+        <h1 class="auth-title">CREATE <span>ACCOUNT</span></h1>
+
+        <p class="auth-sub">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+
+        <form class="auth-form" id="signupForm" novalidate>
+
+          <div class="stack-card">
+
+            <div class="field">
+              <img class="input-icon" src="images/profile-sign.png" alt="">
+              <input type="text" name="name" placeholder="Hasib Mardakoush" required>
+            </div>
+
+            <div class="field">
+              <img class="input-icon" src="images/mail-sign.png" alt="">
+              <input type="email" name="email" placeholder="msa@gmail.com" required>
+            </div>
+
+            <div class="field">
+              <img class="input-icon" src="images/calender-sign.png" alt="">
+              <input type="text" name="dob" placeholder="18/03/2024"
+                onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" required>
+            </div>
+
+            <div class="field">
+              <img class="input-icon" src="images/profile-sign.png" alt="">
+              <input type="tel" name="phone" placeholder="(454) 726-0592" required>
+            </div>
+
+            <div class="field">
+              <img class="input-icon" src="images/password-sign.png" alt="">
+              <input type="password" name="password" id="password" placeholder="********" required>
+
+              <button class="eye" type="button" id="togglePass" aria-label="Show password">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7Zm0 12a5 5 0 1 1 5-5 5 5 0 0 1-5 5Zm0-8a3 3 0 1 0 3 3 3 3 0 0 0-3-3Z" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <button class="auth-submit" type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="auth-right" aria-hidden="true">
+      <img src="images/signup-swimmer.jpg" alt="">
+    </section>
+  </main>
+
+  <script src="signup.js"></script>
+  <script src="nav-signed-out.js"></script>
+  <script src="nav-auth-switch.js"></script>
+  <script src="nav.js"></script>
+</body>
+
+</html>

@@ -6,9 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSA Shop</title>
     <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-signed-out.css">
 </head>
 
 <body>
+    <style>
+        .msa-footer {
+            width: 100%;
+            background: linear-gradient(180deg, #042b6e 0%, #022978 100%);
+            color: #ffffff;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+        .desktop-nav{
+              font-family: "Montserrat", sans-serif;
+        }
+    </style>
+    <header class="top-nav" id="navSignedOut" hidden>
+        <a class="logo" href="index.html" aria-label="MSA Home">
+            <img src="images/msa-logo.png" alt="MSA Logo">
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="community.html">Community</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="contact-us.html">Contact us</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="signup.html" class="btn-outline">Sign Up</a>
+            <a href="registration.html" class="btn-yellow">Registration</a>
+        </div>
+    </header>
+
+    <header class="msa-nav-signed" id="navSignedIn" hidden>
+        <div class="msa-nav-inner">
+
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="student-profile.html">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="index.html" id="signOutBtn">
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
 
     <section class="hero-section">
 
@@ -82,11 +196,9 @@
 
             <div class="msa-shop-cards">
 
-                <!-- CARD 1 -->
                 <article class="flip-card">
                     <div class="flip-card-inner">
 
-                        <!-- FRONT -->
                         <div class="flip-card-front card-face">
                             <div class="msa-shop-card-image">
                                 <img src="images/NicePng_googles-png_2556565.png" alt="">
@@ -97,7 +209,8 @@
                                     <h3 class="msa-shop-card-title">Swans UV</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -131,7 +244,8 @@
                                     <h3 class="msa-shop-card-title">Arena Black</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -164,7 +278,8 @@
                                     <h3 class="msa-shop-card-title">Spurt White</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -197,7 +312,8 @@
                                     <h3 class="msa-shop-card-title">Swan Blue</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -249,7 +365,8 @@
                                     <h3 class="msa-shop-card-title">Arena Orange</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -282,7 +399,8 @@
                                     <h3 class="msa-shop-card-title">Arena Red</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -315,7 +433,8 @@
                                     <h3 class="msa-shop-card-title">Arena Navy</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -348,7 +467,8 @@
                                     <h3 class="msa-shop-card-title">Arena Black</h3>
                                     <div class="msa-shop-card-actions">
                                         <button class="msa-shop-circle-btn flip-open">♡</button>
-                                        <button class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
+                                        <button
+                                            class="msa-shop-circle-btn msa-shop-circle-btn-primary flip-open">+</button>
                                     </div>
                                 </div>
                                 <p class="msa-shop-card-price">
@@ -376,9 +496,6 @@
         </div>
     </section>
 
-     <!-- ======================================
-         MSA EXCLUSIVES SECTION
-         ====================================== -->
     <section class="msa-exclusives">
         <div class="msa-exclusives-inner">
 
@@ -387,12 +504,9 @@
                 <p>MSA most purchased items</p>
             </header>
 
-            <!-- GRID OF SEPARATE CARDS -->
             <div class="msa-ex-grid">
 
-                <!-- BIG SHIRT CARD (LEFT) -->
                 <article class="msa-ex-card msa-ex-card--shirt">
-                    <!-- LEFT SIDE: TEXT -->
                     <div class="msa-ex-left">
                         <div class="msa-ex-intro">
                             <p class="msa-ex-tag">
@@ -417,7 +531,6 @@
                         </div>
                     </div>
 
-                    <!-- RIGHT SIDE: IMAGE -->
                     <div class="msa-ex-middle">
                         <div class="msa-ex-middle-card">
                             <img src="images/msa-shirt.png" alt="MSA headcoach shirt">
@@ -425,7 +538,6 @@
                     </div>
                 </article>
 
-                <!-- CAP CARD (TOP RIGHT – WIDE) -->
                 <article class="msa-ex-card msa-ex-card--cap">
                     <div class="msa-ex-cap-text">
                         <p class="msa-ex-tag">
@@ -443,14 +555,12 @@
                     </div>
                 </article>
 
-                <!-- ACCESSORIES CARD -->
                 <article class="msa-ex-card msa-ex-card--accessories">
                     <p class="msa-ex-tag" style="font-size: 14px;">MSA <span>ACCESSORIES</span></p>
                     <p class="msa-ex-tag-sub">Wrist bands &amp; more</p>
                     <img src="images/msa-bands.png" alt="MSA wristbands" class="msa-ex-img">
                 </article>
 
-                <!-- SWIMCAPS CARD -->
                 <article class="msa-ex-card msa-ex-card--swimcap">
                     <p class="msa-ex-tag" style="font-size: 12px;">MSA <span>SWIMCAPS</span></p>
                     <p class="msa-ex-tag-sub">Our signature swim caps</p>
@@ -461,37 +571,29 @@
         </div>
     </section>
 
-    <!-- ======================================
-         GLOBAL CUSTOMIZER POPUP (OVERLAY)
-         ====================================== -->
     <div class="msa-customizer">
         <div class="msa-customizer-dialog">
             <button type="button" class="msa-custom-close">&times;</button>
 
             <div class="msa-custom-layout">
-                <!-- LEFT: WIZARD CONTENT -->
                 <div class="msa-custom-left">
-                    <!-- Top tabs -->
                     <div class="msa-custom-tabs">
                         <button class="msa-custom-tab active" data-step="1">Items</button>
                         <button class="msa-custom-tab" data-step="2">Text</button>
                         <button class="msa-custom-tab" data-step="3">Colors</button>
                     </div>
 
-                    <!-- STEP 1: ITEMS -->
                     <div class="msa-custom-panel active" data-step="1">
 
                         <div class="msa-select-title-row">
                             <p class="msa-custom-title">Select Item</p>
 
-                            <!-- quantity pill -->
                             <div class="msa-qty-row">
                                 <button type="button" class="msa-qty-btn" data-dir="-">−</button>
                                 <span class="msa-qty-value" id="msa-qty-value">1</span>
                                 <button type="button" class="msa-qty-btn" data-dir="+">+</button>
                             </div>
                         </div>
-                        <!-- items grid (2 x 3) -->
                         <div class="msa-item-grid">
                             <button class="msa-item-btn">
                                 <span class="name">T-Shirts</span>
@@ -524,7 +626,6 @@
                             </button>
                         </div>
 
-                        <!-- bottom nav: ONLY right arrow -->
                         <div class="msa-custom-footer">
                             <button type="button" class="msa-nav-circle msa-step-next">
                                 <img src="images/arrow-right.png" alt="">
@@ -533,7 +634,6 @@
 
                     </div>
 
-                    <!-- STEP 2: TEXT -->
                     <div class="msa-custom-panel" data-step="2">
                         <p class="msa-custom-title">Customize Text</p>
 
@@ -555,7 +655,6 @@
                             <button type="button" class="msa-quote-pill">Walk fearless</button>
                         </div>
 
-                        <!-- bottom nav: left + right arrows -->
                         <div class="msa-custom-footer">
                             <button type="button" class="msa-nav-circle msa-step-back">
                                 <img src="images/arrow-left.png" alt="">
@@ -568,7 +667,6 @@
 
                     </div>
 
-                    <!-- STEP 3: COLORS -->
                     <div class="msa-custom-panel" data-step="3">
                         <p class="msa-custom-label big">Choose Color</p>
                         <div class="msa-color-row">
@@ -585,19 +683,15 @@
                             <button class="msa-pill small">XL</button>
                         </div>
 
-                        <!-- Footer buttons (Back + Add another Item + Check Out) -->
                         <div class="msa-custom-footer">
-                            <!-- left arrow circle -->
                             <button type="button" class="msa-nav-circle msa-step-back">
                                 <img src="images/arrow-left.png" alt="">
                             </button>
 
-                            <!-- middle button -->
                             <button type="button" class="msa-step-secondary">
                                 Add another Item
                             </button>
 
-                            <!-- right button: yellow "Check Out" -->
                             <button type="button" class="msa-step-next msa-step-checkout">
                                 <span class="msa-icon-bag"></span>
                                 Check Out
@@ -607,16 +701,104 @@
 
                 </div>
 
-                <!-- RIGHT: SHIRT PREVIEW -->
                 <div class="msa-custom-preview">
                     <img src="images/msa-shirt.png" alt="MSA headcoach shirt">
                 </div>
             </div>
         </div>
     </div>
+    <footer class="msa-footer">
+        <div class="msa-footer__inner">
+
+            <div class="msa-footer__topline"></div>
+
+            <div class="msa-footer__grid">
+                <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
 
 
     <script src="shop.js"></script>
+
+    <script src="nav.js"></script>
+    <script src="nav-signed-out.js"></script>
+    <script src="nav-auth-switch.js"></script>
 </body>
 
 </html>

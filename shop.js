@@ -176,9 +176,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateCards();
 
-    /* ============================
-       FLIP CARD SYSTEM
-    ============================ */
+
     document.querySelectorAll(".flip-card").forEach(card => {
 
         card.querySelectorAll(".flip-open").forEach(btn => {
@@ -198,14 +196,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    
-    // ============================
-    // ELEMENTS
-    // ============================
+ 
     const customizeBtn = document.querySelector('.msa-btn-customize');
     const customizer   = document.querySelector('.msa-customizer');
 
-    // If either is missing, stop
     if (!customizeBtn || !customizer) return;
 
     const tabs   = customizer.querySelectorAll('.msa-custom-tab');
@@ -219,16 +213,11 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentStep = 1;
 
 
-    // ============================
-    // HELPERS
-    // ============================
 
     function showStep(step) {
-        // deactivate all
         panels.forEach(p => p.classList.remove('active'));
         tabs.forEach(t => t.classList.remove('active'));
 
-        // activate chosen
         const panel = customizer.querySelector('.msa-custom-panel[data-step="' + step + '"]');
         const tab   = customizer.querySelector('.msa-custom-tab[data-step="' + step + '"]');
 
@@ -241,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function openCustomizer() {
         customizer.classList.add('is-open');
         showStep(1);
-        document.body.style.overflow = 'hidden'; // lock scroll
+        document.body.style.overflow = 'hidden'; 
     }
 
     function closeCustomizer() {
@@ -251,16 +240,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // ============================
-    // OPEN / CLOSE
-    // ============================
+
     customizeBtn.addEventListener('click', openCustomizer);
 
     if (closeBtn) {
         closeBtn.addEventListener('click', closeCustomizer);
     }
 
-    // click on dark overlay closes popup
+  
     customizer.addEventListener('click', (e) => {
         if (e.target === customizer) {
             closeCustomizer();
@@ -268,9 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // ============================
-    // TABS (Items / Text / Colors)
-    // ============================
+
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const step = Number(tab.dataset.step || 1);
@@ -279,19 +264,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // ============================
-    // NEXT (arrows + checkout)
-    // ============================
+
     nextButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Checkout button (has msa-step-checkout)
             if (btn.classList.contains('msa-step-checkout')) {
-                // here you could hook real checkout logic
                 closeCustomizer();
                 return;
             }
 
-            // Arrows: go forward if possible
             if (currentStep < 3) {
                 showStep(currentStep + 1);
             }
@@ -299,24 +279,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // ============================
-    // BACK (arrows)
-    // ============================
+    
     backButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             if (currentStep > 1) {
                 showStep(currentStep - 1);
             } else {
-                // at step 1, back closes popup
                 closeCustomizer();
             }
         });
     });
 
 
-    // ============================
-    // STEP 1 — ITEM SELECTION
-    // ============================
+
     const itemButtons = customizer.querySelectorAll('.msa-item-btn');
     itemButtons.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -325,7 +300,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Quantity counter
     const qtyValueEl = document.getElementById('msa-qty-value');
     const qtyButtons = customizer.querySelectorAll('.msa-qty-btn');
 
@@ -343,9 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // ============================
-    // STEP 2 — TEXT / QUOTES
-    // ============================
+    
     const textInput = customizer.querySelector('.msa-custom-text-input');
     const charSpan  = customizer.querySelector('#msa-char-current');
 
@@ -366,13 +338,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    // ============================
-    // STEP 3 — "Add another Item"
-    // ============================
+
     const addAnotherBtn = customizer.querySelector('.msa-step-secondary');
     if (addAnotherBtn) {
         addAnotherBtn.addEventListener('click', () => {
-            // Go back to step 1 to select another item
             showStep(1);
         });
     }

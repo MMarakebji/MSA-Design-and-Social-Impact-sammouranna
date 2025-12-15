@@ -6,52 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSA </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav-signed-out.css">
 </head>
 
 <body style="background-color: #032e8a">
     <style>
+        body {
+            padding-top: 0 !important;
+        }
 
+        .msa-footer {
+            width: 100%;
+            background: linear-gradient(180deg, #274186 0%, #022978 100%);
+            color: #ffffff;
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+        }
+
+        .hero-slider .subtitle {
+            font-size: 11px;
+        }
     </style>
-    <!-- NAVBAR -->
-    <header class="top-nav">
-        <div class="logo">
-            <img src="images/MSA logo.png" alt="MSA Logo">
-        </div>
+    <header class="top-nav" id="navSignedOut" hidden>
+        <a class="logo" href="index.html" aria-label="MSA Home">
+            <img src="images/msa-logo.png" alt="MSA Logo">
+        </a>
 
         <nav class="desktop-nav">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Community</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact us</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about-us.html">About us</a>
+            <a href="community.html">Community</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact-us.html">Contact us</a>
         </nav>
 
         <div class="nav-actions">
-            <button class="btn-outline">Sign Up</button>
-            <button class="btn-yellow">Registration</button>
+            <a href="signup.html" class="btn-outline">Sign Up</a>
+            <a href="registration.html" class="btn-yellow">Registration</a>
         </div>
+    </header>
 
-        <!-- BURGER BUTTON -->
-        <button class="burger" id="burgerBtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <header class="msa-nav-signed" id="navSignedIn" hidden>
+        <div class="msa-nav-inner">
 
-        <!-- MOBILE NAV -->
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Community</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact us</a>
-        </nav>
+            <div class="msa-nav-logo">
+                <img src="images/msa-logo.png" alt="MSA Logo">
+            </div>
+
+            <nav class="msa-nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about-us.html">About us</a>
+                <a href="community.html">Community</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact-us.html">Contact us</a>
+                <a href="student-profile.html">Shark Profile</a>
+            </nav>
+
+            <div class="msa-nav-user">
+                <div class="msa-profile-dd" id="msaProfileDD">
+                    <button class="msa-user-icon msa-profile-toggle" type="button" aria-label="Profile"
+                        aria-expanded="false">
+                        <img src="images/profile-icon.png" alt="Profile">
+                    </button>
+
+                    <div class="msa-profile-menu" role="menu" aria-hidden="true">
+                        <div class="msa-profile-card">
+
+                            <div class="msa-profile-top">
+                                <div class="msa-profile-avatar"></div>
+
+                                <button class="msa-profile-edit" type="button" aria-label="Edit profile">
+                                    <img src="images/edit-pen.png" alt="">
+                                </button>
+                            </div>
+
+                            <h3 class="msa-profile-name">MOHAMAD HAJJAR</h3>
+
+                            <div class="msa-profile-info">
+                                <div class="msa-profile-row">
+                                    <img src="images/mail.png" alt="">
+                                    <span>mohamadhajjar@gmail.com</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/phone-icon.png" alt="">
+                                    <span>+96170885758</span>
+                                </div>
+
+                                <div class="msa-profile-row">
+                                    <img src="images/2-users.png" alt="">
+                                    <span>2 Childs Registered</span>
+                                </div>
+                            </div>
+
+                            <a class="msa-profile-btn" href="student-profile.html">
+                                <img src="images/blue-shark-profile.png" alt="" class="btn-icon">
+                                Shark Profile
+                            </a>
+
+
+                            <a class="msa-profile-signout" href="index.html" id="signOutBtn">
+                                <img src="images/sign-out.png" alt="" class="signout-icon">
+                                Sign out
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="points-wrap">
+                    <div class="points-blue">
+                        <span class="points-text">327 Pt</span>
+                        <img class="points-shark" src="images/shark-icon-white.png" alt="Shark">
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
 
 
-    <!-- HERO SLIDER -->
     <section class="hero-slider">
-        <!-- slide 1 -->
         <div class="slide active" style="--bg:url('images/slider1.jpg')">
             <div class="overlay"></div>
             <div class="hero-content">
@@ -63,12 +141,12 @@
                         <br>Forge the mentality, fuel your hunger for success.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-white">Schedules</button>
-                        <button class="btn-outline">Apply Now</button>
+                        <a class="btn-white" href="registration.html">Schedules</a>
+                        <a class="btn-outline" href="registration.html">Apply Now</a>
                     </div>
+
                 </div>
 
-                <!-- Right side registration steps -->
                 <div class="hero-steps">
                     <div class="steps-list">
                         <button class="step active" data-slide="0">
@@ -108,7 +186,6 @@
             <p class="scroll-text">Start Your Journey ↓</p>
         </div>
 
-        <!-- slide 2 -->
         <div class="slide" style="--bg:url('images/slider2.jpg')">
             <div class="overlay">
                 <div class="hero-content">
@@ -117,15 +194,14 @@
                         <h1>YOUR GEAR</h1>
                         <p class="subtitle">
                             Embracing the “Mako Shark way,” where drive & ambition fuel success.
-                            <br>Forge the mentality.
-                            <br>Fuel your hunger for success.
+                            <br>Forge the mentality, fuel your hunger for success.
                         </p>
                         <div class="hero-buttons">
-                            <button class="btn-white">Schedules</button>
-                            <button class="btn-outline">Join Now</button>
+                            <a class="btn-white" href="shop.html">Shop now</a>
+                            <a class="btn-outline" href="registration.html">Join Now</a>
                         </div>
+
                     </div>
-                    <!-- Right side registration steps -->
                     <div class="hero-steps">
                         <div class="steps-list">
                             <button class="step active" data-slide="0">
@@ -165,7 +241,6 @@
             <p class="scroll-text">Start Your Journey ↓</p>
         </div>
 
-        <!-- slide 3 -->
         <div class="slide" style="--bg:url('images/slider3.jpg')">
             <div class="overlay"></div>
             <div class="hero-content">
@@ -174,16 +249,15 @@
                     <h1>OUR FAMILY</h1>
                     <p class="subtitle">
                         Embracing the “Mako Shark way,” where drive & ambition fuel success.
-                        <br>Forge the mentality.
-                        <br>Fuel your hunger for success.
+                        <br>Forge the mentality, fuel your hunger for success.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-white">Schedules</button>
-                        <button class="btn-outline">Apply Now</button>
+                        <a class="btn-white" href="community.html">Community</a>
+                        <a class="btn-outline" href="registration.html">Apply Now</a>
                     </div>
+
                 </div>
 
-                <!-- Right side registration steps -->
                 <div class="hero-steps">
                     <div class="steps-list">
                         <button class="step active" data-slide="0">
@@ -224,7 +298,6 @@
         </div>
 
 
-        <!-- slide 4 -->
         <div class="slide" style="--bg:url('images/slider4.jpg')">
             <div class="overlay"></div>
             <div class="hero-content">
@@ -233,16 +306,15 @@
                     <h1>THE TEAM</h1>
                     <p class="subtitle">
                         Embracing the “Mako Shark way,” where drive & ambition fuel success.
-                        <br>Forge the mentality.
-                        <br>Fuel your hunger for success.
+                        <br>Forge the mentality, fuel your hunger for success.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-white">Schedules</button>
-                        <button class="btn-outline">Apply Now</button>
+                        <a class="btn-white" href="signup.html">Shark Profile</a>
+                        <a class="btn-outline" href="registration.html">Apply Now</a>
                     </div>
+
                 </div>
 
-                <!-- Right side registration steps -->
                 <div class="hero-steps">
                     <div class="steps-list">
                         <button class="step active" data-slide="0">
@@ -282,7 +354,6 @@
             <p class="scroll-text">Start Your Journey ↓</p>
         </div>
 
-        <!-- slide 5 -->
         <div class="slide " style="--bg:url('images/slider5.jpg')">
             <div class="overlay"></div>
             <div class="hero-content">
@@ -291,16 +362,15 @@
                     <h1>YOUR PATH</h1>
                     <p class="subtitle">
                         Embracing the “Mako Shark way,” where drive & ambition fuel success.
-                        <br>Forge the mentality.
-                        <br>Fuel your hunger for success.
+                        <br>Forge the mentality ,fuel your hunger for success.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn-white">Schedules</button>
-                        <button class="btn-outline">Apply Now</button>
+                        <a class="btn-white" href="registration.html">Schedules</a>
+                        <a class="btn-outline" href="registration.html">Apply Now</a>
                     </div>
+
                 </div>
 
-                <!-- Right side registration steps -->
                 <div class="hero-steps">
                     <div class="steps-list">
                         <button class="step active" data-slide="0">
@@ -342,11 +412,9 @@
 
 
     </section>
-    <!-- ABOUT SECTION -->
     <section class="about-section" id="about">
-        
 
-        <!-- yellow lines + moving words -->
+
         <div class="keyword-strip-wrapper">
             <div class="keyword-strip">
                 <span>LEARN</span>
@@ -380,11 +448,9 @@
             </div>
         </div>
     </section>
-    <!-- RESULTS SECTION -->
     <section class="results-section">
         <div class="results-container">
 
-            <!-- LEFT SIDE TEXT -->
             <div class="results-left">
                 <h2 class="results-title">
                     A JOURNEY THAT DELIVERS <span>REAL RESULTS</span>
@@ -396,13 +462,12 @@
                 </p>
             </div>
 
-            <!-- RIGHT SIDE DETAILS -->
             <div class="results-right">
 
                 <div class="result-item">
                     <img src="icons/global.png" alt="" class="result-icon">
                     <div>
-                        <p class="result-text">Trained by international certified coaches</p>
+                        <p class="result-text">Trained by international <br>certified coaches</p>
                         <a href="#" class="result-link">
                             <span class="text">More Details</span>
                             <span class="arrow">→</span>
@@ -413,7 +478,7 @@
                 <div class="result-item">
                     <img src="icons/user.png" alt="" class="result-icon">
                     <div>
-                        <p class="result-text">Trusted by 100+ parents & Athletes</p>
+                        <p class="result-text">Trusted by 100+ <br>parents & Athletes</p>
                         <a href="#" class="result-link">
                             <span class="text">More Details</span>
                             <span class="arrow">→</span>
@@ -424,7 +489,7 @@
                 <div class="result-item">
                     <img src="icons/medal.png" alt="" class="result-icon">
                     <div>
-                        <p class="result-text">Designed to challenge, inspire and achieve results</p>
+                        <p class="result-text">Designed to challenge, inspire <br> and achieve results</p>
                         <a href="#" class="result-link">
                             <span class="text">More Details</span>
                             <span class="arrow">→</span>
@@ -437,15 +502,11 @@
 
         </div>
     </section>
-    <!-- FUN SECTION -->
     <section class="fun-section">
         <div class="fun-images">
-            <!-- left group -->
             <img src="images/card1.jpg" alt="" class="fun-img fun-img-1">
             <img src="images/card2.jpg" alt="" class="fun-img fun-img-2">
             <img src="images/card3.jpg" alt="" class="fun-img fun-img-3">
-
-            <!-- right group -->
             <img src="images/card4.jpg" alt="" class="fun-img fun-img-4">
             <img src="images/card5.jpg" alt="" class="fun-img fun-img-5">
             <img src="images/card6.jpg" alt="" class="fun-img fun-img-6">
@@ -459,7 +520,8 @@
             <p class="fun-subtitle">
                 Register your child in a group of up to 4 sharks only
             </p>
-            <button class="fun-btn">Register Now</button>
+            <a href="registration.html" class="fun-btn">Register Now</a>
+
         </div>
     </section>
 
@@ -640,11 +702,99 @@
 
         </section>
     </section>
+    <footer class="msa-footer">
+        <div class="msa-footer__inner">
+
+            <div class="msa-footer__topline"></div>
+
+            <div class="msa-footer__grid">
+                <div class="msa-footer__brand">
+                    <img src="images/msa-logo.png" alt="MSA Logo" class="msa-footer__logo">
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">SHEHIM</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Makosharkacademy@gmail.com">Makosharkacademy@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96176131466">+961 76 131 466</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>Mafraa el dayaa, rokaiye</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__col">
+                    <h4 class="msa-footer__title">DEBIYE</h4>
+
+                    <div class="msa-footer__item">
+                        <img src="images/mail.png" alt="" class="msa-footer__icon">
+                        <a href="mailto:Omarouaidat123@gmail.com">Omarouaidat123@gmail.com</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/phone-icon.png" alt="" class="msa-footer__icon">
+                        <a href="tel:+96181433542">+961 81 433 542</a>
+                    </div>
+
+                    <div class="msa-footer__item">
+                        <img src="images/location.png" alt="" class="msa-footer__icon">
+                        <span>BAU road, daw oil</span>
+                    </div>
+
+                    <a class="msa-footer__map" href="#" target="_blank" rel="noopener">
+                        SEE ON MAP↗
+                    </a>
+                </div>
+
+                <div class="msa-footer__about">
+                    <p class="msa-footer__desc">
+                        Mako Shark Academy<br>
+                        dedicated to excellence in<br>
+                        aquatic education and training.
+                    </p>
+
+                    <div class="msa-footer__follow">
+                        <span class="msa-footer__followLabel">Follow Us:</span>
+
+                        <div class="msa-footer__social">
+                            <a href="#" aria-label="YouTube"><img src="images/youtube.png" alt="YouTube"></a>
+                            <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#" aria-label="X"><img src="images/X.png" alt="X"></a>
+                            <a href="#" aria-label="Instagram"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="#" aria-label="Threads"><img src="images/Thread.png" alt="Threads"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msa-footer__divider"></div>
+
+            <div class="msa-footer__bottom">
+                © 2024 Mako Shark Academy. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
 
 
 
 
     <script src="script.js"></script>
+    <script src="nav.js"></script>
+    <script src="nav-signed-out.js"></script>
+    <script src="nav-auth-switch.js"></script>
 </body>
 
 </html>
